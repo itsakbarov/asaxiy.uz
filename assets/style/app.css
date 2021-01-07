@@ -1,0 +1,160 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Yandex Sans Display';
+}
+
+body .header-form {
+  color: #008DFF;
+  line-height: 16px;
+  border: 2px solid #008DFF;
+  z-index: 2;
+  border-radius: 10px !important;
+}
+
+body .header-form::-webkit-input-placeholder {
+  font-size: 12px;
+  color: #6c757d;
+}
+
+body .header-form:-ms-input-placeholder {
+  font-size: 12px;
+  color: #6c757d;
+}
+
+body .header-form::-ms-input-placeholder {
+  font-size: 12px;
+  color: #6c757d;
+}
+
+body .header-form::placeholder {
+  font-size: 12px;
+  color: #6c757d;
+}
+
+body .header-btn {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  z-index: 1 !important;
+  right: 10px !important;
+  position: relative;
+}
+
+body .header-btn::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  right: 15px;
+  background-image: url(../icon/btn-snow.png);
+  background-size: 63px;
+  width: 61%;
+  height: 14px;
+}
+
+body .left-btn {
+  border: 1px solid #C2C6D1 !important;
+  border-radius: 10px !important;
+  font-family: 'Yandex Sans Display';
+  font-size: 12px;
+  color: #C2C6D1 !important;
+}
+
+body .header__menu .nav-item {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: rgba(20, 24, 33, 0.7);
+  line-height: 16px;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+
+body .lang {
+  font-size: 13px;
+  color: #000;
+}
+
+.cart_dropdown {
+  position: relative;
+}
+
+.cart_dropdown .dropdown-content {
+  width: 400px;
+  -webkit-box-shadow: 0px 10px 30px rgba(209, 213, 223, 0.5);
+          box-shadow: 0px 10px 30px rgba(209, 213, 223, 0.5);
+  overflow: hidden;
+  position: absolute;
+  -webkit-transform-origin: calc(100% - 30px) 0;
+          transform-origin: calc(100% - 30px) 0;
+  right: 0;
+  top: 38px;
+  background: #F1F8FF;
+  opacity: 0;
+  font-size: 1rem;
+  color: #212529;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) all 0.5s;
+  transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) all 0.5s;
+  border-radius: 20px;
+}
+
+.cart_dropdown .dropdown-content .empty {
+  background: white;
+}
+
+.cart_dropdown .dropdown-content .cart-footer .btn {
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 20px;
+  border-radius: 10px;
+}
+
+.cart_dropdown .dropdown-content .cart-footer .btn.snow {
+  position: relative;
+}
+
+.cart_dropdown .dropdown-content .cart-footer .btn.snow:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -7px;
+  left: -3px;
+  right: 0;
+  z-index: 2;
+  height: 23px;
+  background: url(../icon/-leftsnow.png) no-repeat 0 0, url(../icon/btn-snow.png) no-repeat 50% 0, url(../icon/right-snow.png) no-repeat 100% 0;
+}
+
+.cart_dropdown:hover .dropdown-content {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.header__right .faded {
+  color: #000 !important;
+  border-color: #2c2c2c !important;
+  opacity: 0.5;
+  -webkit-transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) all 0.5s;
+  transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) all 0.5s;
+}
+
+.header__right .faded svg {
+  -webkit-transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) all 0.5s;
+  transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) all 0.5s;
+  fill: #C2C6D1;
+}
+
+.header__right .faded:hover {
+  opacity: 1;
+}
+
+.header__right .faded:hover svg {
+  fill: #000;
+}
