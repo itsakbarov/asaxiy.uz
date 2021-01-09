@@ -10,6 +10,8 @@
         crossorigin="anonymous" />
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/icon/favicon-32x32.png">
     <link rel="stylesheet" href="./assets/yandex-font/stylesheet.css">
+    <link rel="stylesheet" href="./node_modules/hover.css/css/hover-min.css">
+    <link rel="stylesheet" href="./assets/libs/slick-1.8.1/slick/slick.css">
     <link rel="stylesheet" href="./assets/libs/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/style/app.min.css">
 </head>
@@ -56,7 +58,9 @@
                                             d="M3.5 9a1 1 0 00-.923 1.385l3.654 8.769A3 3 0 009 21h6a3 3 0 002.77-1.846l3.653-8.77A1 1 0 0020.5 9h-17zM14 15a2 2 0 11-4 0 2 2 0 014 0z" />
                                     </svg>
 
-                                    Savatcha</button>
+                                    Savatcha
+                                    <span class="badge bg-primary rounded-circle">4</span>
+                                </button>
                                 <div class="dropdown-content">
                                     <div class="empty pt-2 pb-3 "></div>
                                     <div class="dropdown-header d-flex px-4 justify-content-between align-items-center">
@@ -64,11 +68,13 @@
                                         <span class="checkout-total-sum fw-bold">0 so'm</span>
                                     </div>
                                     <div class="cart-footer p-4">
-                                        <a href="#" class="btn text-light d-block border-0  p-3 snow btn-primary">ОФОРМИТЬ
-                                            ПОКУПКУ</a>
                                         <a href="#"
-                                            class="btn btn-primary text-dark fw-bolder bg-transparent d-block border-0  p-3">ПЕРЕЙТИ
-                                            В КОРЗИНКУ</a>
+                                            class="btn text-light d-block border-0  p-3 snow btn-primary hvr-bounce-to-right">ОФОРМИТЬ
+                                            ПОКУПКУ</a>
+                                        <a href="#" class="btn  hvr-bounce-to-right btn-primary text-dark fw-bolder bg-transparent d-block
+                                            border-0 p-3">ПЕРЕЙТИ
+                                            В КОРЗИНКУ
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -103,12 +109,1095 @@
             </div>
         </div>
     </header>
+    <main class="main pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+                            <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+                            <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./assets/images/carousel-image1.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <button class="btn carousel-btn btn-outline-secondary">Batafsil</button>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/images/carousel-image.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <button class="btn carousel-btn btn-outline-secondary">Batafsil</button>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/images/carousel-image2.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <button class="carousel-btn btn btn-outline-secondary">Batafsil</button>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="row">
+                        <div class="col-lg-6 responsive">
+                            <a href="#" style="background-color: white;border-radius:10px; display: block; "
+                                class="carousel-card text-decoration-none text-dark mb-3">
+                                <div class="item p-3">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <img class="w-100" src="./assets/images/carousel-image3.jpg" alt=""
+                                                class="carousel-img">
+                                        </div>
+                                        <div class="col-lg-6 ">
+                                            <div class="pagination mb-4 d-flex justify-content-end">
+                                                <span class="btn circle active  breadcrumb me-3"></span>
+                                                <span class="btn circle breadcrumb"></span>
+                                            </div>
+                                            <button
+                                                class="btn btn-primary border-0 rounded-3 snow float-end">Batafsil</button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12 ">
+                                            <span class="item-txt text-end d-block">Telefonlar</span>
+                                            <span class="item-txt d-block text-end fw-bold">Lorem ipsum dolor
+                                                sit.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 responsive">
+                            <a href="#" style="background-color: white;border-radius:10px; display: block; "
+                                class="carousel-card text-decoration-none text-dark mb-3">
+                                <div class="item p-3">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <img class="w-100" src="./assets/images/carousel-image3.jpg" alt=""
+                                                class="carousel-img">
+                                        </div>
+                                        <div class="col-lg-6 ">
+                                            <div class="pagination mb-4 d-flex justify-content-end">
+                                                <span class="btn circle active  breadcrumb me-3"></span>
+                                                <span class="btn circle breadcrumb"></span>
+                                            </div>
+                                            <button
+                                                class="btn btn-primary border-0 rounded-3 snow float-end">Batafsil</button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12 ">
+                                            <span class="item-txt text-end d-block">Telefonlar</span>
+                                            <span class="item-txt d-block text-end fw-bold">Lorem ipsum dolor
+                                                sit.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 responsive">
+                            <a href="#" style="background-color: white;border-radius:10px; display: block; "
+                                class="carousel-card text-decoration-none text-dark mb-3">
+                                <div class="item p-3">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <img class="w-100" src="./assets/images/carousel-image3.jpg" alt=""
+                                                class="carousel-img">
+                                        </div>
+                                        <div class="col-lg-6 ">
+                                            <div class="pagination mb-4 d-flex justify-content-end">
+                                                <span class="btn circle active  breadcrumb me-3"></span>
+                                                <span class="btn circle breadcrumb"></span>
+                                            </div>
+                                            <button
+                                                class="btn btn-primary border-0 rounded-3 snow float-end">Batafsil</button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12 ">
+                                            <span class="item-txt text-end d-block">Telefonlar</span>
+                                            <span class="item-txt d-block text-end fw-bold">Lorem ipsum dolor
+                                                sit.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 responsive">
+                            <a href="#" style="background-color: white;border-radius:10px; display: block; "
+                                class="carousel-card text-decoration-none text-dark mb-3">
+                                <div class="item p-3">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <img class="w-100" src="./assets/images/carousel-image3.jpg" alt=""
+                                                class="carousel-img">
+                                        </div>
+                                        <div class="col-lg-6 ">
+                                            <div class="pagination mb-4 d-flex justify-content-end">
+                                                <span class="btn circle active  breadcrumb me-3"></span>
+                                                <span class="btn circle breadcrumb"></span>
+                                            </div>
+                                            <button
+                                                class="btn btn-primary border-0 rounded-3 snow float-end">Batafsil</button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12 ">
+                                            <span class="item-txt text-end d-block">Telefonlar</span>
+                                            <span class="item-txt d-block text-end fw-bold">Lorem ipsum dolor
+                                                sit.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="list-group aside">
+                        <div class="list-header d-flex justify-content-between px-3 pt-3 align-items-center">
+                            <p class="text-muted mb-2">Kitoblar</p>
+                            <a href="#" class="list-link mb-2">
+                                <img src="./assets/icon/asaxiy-books-store.png" alt="">
+                            </a>
+                        </div>
+                        <a href="#"
+                            class="list-group-item py-3 list-group-item-action d-flex justify-content-start
+                            align-items-center"
+                            aria-current="true">
+                            <img src="./assets/icon/toni.png" alt="" class="list-item__img">
+                            <h6 class="list-item__text fw-bolder d-block">
+                                Toni Shey: Baxt yetkazish. Milliard dollarlik internet
+                                <span class="text-muted d-block">
+                                    Biznes
+                                </span>
+                            </h6>
+
+                        </a>
+                        <a href="#"
+                            class="list-group-item py-3 list-group-item-action d-flex justify-content-start
+                            align-items-center"
+                            aria-current="true">
+                            <img src="./assets/icon/1984.jpg" alt="" class="list-item__img">
+                            <h6 class="list-item__text fw-bolder d-block">
+                                Jorj Oruell: 1984
+                                <span class="text-muted d-block">
+                                    Jahon Adabiyoti
+                                </span>
+                            </h6>
+
+                        </a>
+                        <a href="#"
+                            class="list-group-item py-3 list-group-item-action d-flex justify-content-start
+                            align-items-center"
+                            aria-current="true">
+                            <img src="./assets/icon/warning.png" alt="" class="list-item__img">
+                            <h6 class="list-item__text fw-bolder d-block">
+
+Diqqat: Chalg'ituvchi dunyoda muvaffaqiyat sirlari
+                                <span class="text-muted d-block">
+                                    Biznes
+                                </span>
+
+                            </h6>
+
+                        </a>
+                        <a href="#"
+                            class="list-group-item py-3 list-group-item-action d-flex justify-content-start
+                            align-items-center"
+                            aria-current="true">
+                            <img src="./assets/icon/jobs.png" alt="" class="list-item__img">
+                            <h6 class="list-item__text fw-bolder d-block">
+                                Uolter Ayzekson: Stiv Jobs
+                                <span class="text-muted d-block">
+                                    Jahon Adabiyoti
+                                </span>
+                            </h6>
+
+                        </a>
+                        <a href="#"
+                            class="list-group-item py-3 list-group-item-action d-flex justify-content-start align-items-center"
+                            aria-current="true">
+                            <img src="./assets/icon/jobs.png" alt="" class="list-item__img">
+                            <h6 class="list-item__text fw-bolder d-block">
+                                Uolter Ayzekson: Stiv Jobs
+                                <span class="text-muted d-block">
+                                    Jahon Adabiyoti
+                                </span>
+                            </h6>
+
+                        </a>
+
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="carousel-wrapper mb-5">
+                        <div class="carousel-header d-flex  p-4 justify-content-between align-items-center">
+                            <h5 class="carousel-name text-muted fw-bolder">Ommabop maxsulotlar</h5>
+                            <div class="carousel-triggers">
+                                <a href="jacascript:void(0)"
+                                    class="btn btn-primary border-0 rounded-3 btn-sm arrow next-arrow">
+                                    <i class="fas fa-chevron-left"></i>
+                                </a>
+                                <a href="jacascript:void(0)"
+                                    class="btn btn-primary border-0 rounded-3 btn-sm arrow prev-arrow">
+                                    <i class="fas fa-chevron-right"></i>
+
+                                </a>
+                            </div>
+                        </div>
 
 
+                        <div class="slick-carousel-wrapper wided p-4">
+                            <div class="item">
+                                <img src="./assets/images/headphone.jpg" alt="" class="item-img">
+                                <div class="item-label">
+                                    Chegirma
+                                </div>
+                                <div class="item-info">
+                                    <a href="#"
+                                        class="item-tag btn btn-primary btn-sm mb-2 d-inline-block snow border-0">Samsung</a>
+                                    <a href="#" class="item-title  d-block  ">
+                                        <h5 class="h5 fw-bold">Беспроводные наушники Nia-X10 </h5>
+                                    </a>
+                                    <div class="item-rate d-flex mb-3 align-items-center">
+                                        <div class="item-star me-2">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <div class="item-comment">
+                                            <span class="text-muted">
+                                                <i class="far fa-comment-alt"></i>
+                                                6 ta sharh </span>
+                                        </div>
+                                    </div>
+                                    <div class="item-price d-flex justify-content-between align-items-center">
+                                        <h6 class="price">
+                                            <span class="d-block text-danger text-decoration-line-through">689 000
+                                                so'm</span>
+                                            605 000 so'm
+                                        </h6>
+                                        <a href="#" class="item-cart">
+                                            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M12 4.562L7.768 9.64a1 1 0 11-1.536-1.28l5-6a1 1 0 011.536 0l5 6a1 1 0 11-1.536 1.28L12 4.562z" />
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M3.5 9a1 1 0 00-.923 1.385l3.654 8.769A3 3 0 009 21h6a3 3 0 002.77-1.846l3.653-8.77A1 1 0 0020.5 9h-17zM14 15a2 2 0 11-4 0 2 2 0 014 0z" />
+                                            </svg>
+
+                                        </a>
+                                    </div>
+                                    <div class="item-links d-flex justify-content-between">
+                                        <a href="#" class="item-link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <circle cx="10" cy="20.5" r="1"></circle>
+                                                <circle cx="18" cy="20.5" r="1"></circle>
+                                                <path
+                                                    d="M2.5 2.5h3l2.7 12.4a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6l1.6-8.4H7.1">
+                                                </path>
+                                            </svg>
+                                            Buyurtma berish
+                                        </a>
+                                        <a class="item-link text-muted" href="#">
+                                            <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                id="more-icon">
+                                                <path
+                                                    d="M14 2H2C1.267 2 .667 2.6.667 3.333v9.334C.667 13.4 1.267 14 2 14h12c.733 0 1.333-.6 1.333-1.333V3.333C15.333 2.6 14.733 2 14 2zm0 10.667H2V3.333h12v9.334zm-10.667-6h8.457L9.333 8h-6V6.667zm0-2h9.176L10.5 6H3.333V4.667z">
+                                                </path>
+                                            </svg>
+                                            Рассрочка
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <img src="./assets/images/tablet.jpg" alt="" class="item-img">
+                                <div class="item-label">
+                                    Chegirma
+                                </div>
+                                <div class="item-info">
+                                    <a href="#"
+                                        class="item-tag btn btn-primary btn-sm mb-2 d-inline-block snow border-0">Samsung</a>
+                                    <a href="#" class="item-title  d-block  ">
+                                        <h5 class="h5 fw-bold">Planshet Samsung Tablet Tab A1 </h5>
+                                    </a>
+                                    <div class="item-rate d-flex mb-3 align-items-center">
+                                        <div class="item-star me-2">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <div class="item-comment">
+                                            <span class="text-muted">
+                                                <i class="far fa-comment-alt"></i>
+                                                6 ta sharh </span>
+                                        </div>
+                                    </div>
+                                    <div class="item-price d-flex justify-content-between align-items-center">
+                                        <h6 class="price">
+                                            <span class="d-block text-danger text-decoration-line-through">689 000
+                                                so'm</span>
+                                            605 000 so'm
+                                        </h6>
+                                        <a href="#" class="item-cart">
+                                            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M12 4.562L7.768 9.64a1 1 0 11-1.536-1.28l5-6a1 1 0 011.536 0l5 6a1 1 0 11-1.536 1.28L12 4.562z" />
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M3.5 9a1 1 0 00-.923 1.385l3.654 8.769A3 3 0 009 21h6a3 3 0 002.77-1.846l3.653-8.77A1 1 0 0020.5 9h-17zM14 15a2 2 0 11-4 0 2 2 0 014 0z" />
+                                            </svg>
+
+                                        </a>
+                                    </div>
+                                    <div class="item-links d-flex justify-content-between">
+                                        <a href="#" class="item-link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <circle cx="10" cy="20.5" r="1"></circle>
+                                                <circle cx="18" cy="20.5" r="1"></circle>
+                                                <path
+                                                    d="M2.5 2.5h3l2.7 12.4a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6l1.6-8.4H7.1">
+                                                </path>
+                                            </svg>
+                                            Buyurtma berish
+                                        </a>
+                                        <a class="item-link text-muted" href="#">
+                                            <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                id="more-icon">
+                                                <path
+                                                    d="M14 2H2C1.267 2 .667 2.6.667 3.333v9.334C.667 13.4 1.267 14 2 14h12c.733 0 1.333-.6 1.333-1.333V3.333C15.333 2.6 14.733 2 14 2zm0 10.667H2V3.333h12v9.334zm-10.667-6h8.457L9.333 8h-6V6.667zm0-2h9.176L10.5 6H3.333V4.667z">
+                                                </path>
+                                            </svg>
+                                            Рассрочка
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <img src="./assets/images/bracelet.jpg" alt="" class="item-img">
+
+                                <div class="item-info">
+                                    <a href="#"
+                                        class="item-tag btn btn-primary btn-sm mb-2 d-inline-block snow border-0">Xiaomi</a>
+                                    <a href="#" class="item-title  d-block  ">
+                                        <h5 class="h5 fw-bold">
+                                            Смарт браслет Xiaomi Mi Band 5 (Русское Меню) </h5>
+                                    </a>
+                                    <div class="item-rate d-flex mb-3 align-items-center">
+                                        <div class="item-star me-2">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <div class="item-comment">
+                                            <span class="text-muted">
+                                                <i class="far fa-comment-alt"></i>
+                                                6 ta sharh </span>
+                                        </div>
+                                    </div>
+                                    <div class="item-price d-flex justify-content-between align-items-center">
+                                        <h6 class="price">
+                                            <span class="d-block text-danger text-decoration-line-through">289 000
+                                                so'm</span>
+                                            205 000 so'm
+                                        </h6>
+                                        <a href="#" class="item-cart">
+                                            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M12 4.562L7.768 9.64a1 1 0 11-1.536-1.28l5-6a1 1 0 011.536 0l5 6a1 1 0 11-1.536 1.28L12 4.562z" />
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M3.5 9a1 1 0 00-.923 1.385l3.654 8.769A3 3 0 009 21h6a3 3 0 002.77-1.846l3.653-8.77A1 1 0 0020.5 9h-17zM14 15a2 2 0 11-4 0 2 2 0 014 0z" />
+                                            </svg>
+
+                                        </a>
+                                    </div>
+                                    <div class="item-links d-flex justify-content-between">
+                                        <a href="#" class="item-link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <circle cx="10" cy="20.5" r="1"></circle>
+                                                <circle cx="18" cy="20.5" r="1"></circle>
+                                                <path
+                                                    d="M2.5 2.5h3l2.7 12.4a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6l1.6-8.4H7.1">
+                                                </path>
+                                            </svg>
+                                            Buyurtma berish
+                                        </a>
+                                        <a class="item-link text-muted" href="#">
+                                            <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                id="more-icon">
+                                                <path
+                                                    d="M14 2H2C1.267 2 .667 2.6.667 3.333v9.334C.667 13.4 1.267 14 2 14h12c.733 0 1.333-.6 1.333-1.333V3.333C15.333 2.6 14.733 2 14 2zm0 10.667H2V3.333h12v9.334zm-10.667-6h8.457L9.333 8h-6V6.667zm0-2h9.176L10.5 6H3.333V4.667z">
+                                                </path>
+                                            </svg>
+                                            Рассрочка
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <img src="./assets/images/cover.png" alt="" class="item-img">
+                                <div class="item-label">
+                                    Chegirma
+                                </div>
+                                <div class="item-info">
+                                    <a href="#"
+                                        class="item-tag btn btn-primary btn-sm mb-2 d-inline-block snow border-0">Xiaomi</a>
+                                    <a href="#" class="item-title  d-block  ">
+                                        <h5 class="h5 fw-bold">Cover Silicone for Xiaomi mi 9T </h5>
+                                    </a>
+                                    <div class="item-rate d-flex mb-3 align-items-center">
+                                        <div class="item-star me-2">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <div class="item-comment">
+                                            <span class="text-muted">
+                                                <i class="far fa-comment-alt"></i>
+                                                6 ta sharh </span>
+                                        </div>
+                                    </div>
+                                    <div class="item-price d-flex justify-content-between align-items-center">
+                                        <h6 class="price">
+                                            <span class="d-block text-danger text-decoration-line-through">89 000
+                                                so'm</span>
+                                            50 000 so'm
+                                        </h6>
+                                        <a href="#" class="item-cart">
+                                            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M12 4.562L7.768 9.64a1 1 0 11-1.536-1.28l5-6a1 1 0 011.536 0l5 6a1 1 0 11-1.536 1.28L12 4.562z" />
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M3.5 9a1 1 0 00-.923 1.385l3.654 8.769A3 3 0 009 21h6a3 3 0 002.77-1.846l3.653-8.77A1 1 0 0020.5 9h-17zM14 15a2 2 0 11-4 0 2 2 0 014 0z" />
+                                            </svg>
+
+                                        </a>
+                                    </div>
+                                    <div class="item-links d-flex justify-content-between">
+                                        <a href="#" class="item-link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <circle cx="10" cy="20.5" r="1"></circle>
+                                                <circle cx="18" cy="20.5" r="1"></circle>
+                                                <path
+                                                    d="M2.5 2.5h3l2.7 12.4a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6l1.6-8.4H7.1">
+                                                </path>
+                                            </svg>
+                                            Buyurtma berish
+                                        </a>
+                                        <a class="item-link text-muted" href="#">
+                                            <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                id="more-icon">
+                                                <path
+                                                    d="M14 2H2C1.267 2 .667 2.6.667 3.333v9.334C.667 13.4 1.267 14 2 14h12c.733 0 1.333-.6 1.333-1.333V3.333C15.333 2.6 14.733 2 14 2zm0 10.667H2V3.333h12v9.334zm-10.667-6h8.457L9.333 8h-6V6.667zm0-2h9.176L10.5 6H3.333V4.667z">
+                                                </path>
+                                            </svg>
+                                            Рассрочка
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <img src="./assets/images/tv.jpeg" alt="" class="item-img">
+                                <div class="item-label">
+                                    Chegirma
+                                </div>
+                                <div class="item-info">
+                                    <a href="#"
+                                        class="item-tag btn btn-primary btn-sm mb-2 d-inline-block snow border-0">Artel</a>
+                                    <a href="#" class="item-title  d-block  ">
+                                        <h5 class="h5 fw-bold">Телевизор Artel UA32H1200 Smart TV </h5>
+                                    </a>
+                                    <div class="item-rate d-flex mb-3 align-items-center">
+                                        <div class="item-star me-2">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <div class="item-comment">
+                                            <span class="text-muted">
+                                                <i class="far fa-comment-alt"></i>
+                                                6 ta sharh </span>
+                                        </div>
+                                    </div>
+                                    <div class="item-price d-flex justify-content-between align-items-center">
+                                        <h6 class="price">
+                                            <span class="d-block text-danger text-decoration-line-through">1 689 000
+                                                so'm</span>
+                                            1 605 000 so'm
+                                        </h6>
+                                        <a href="#" class="item-cart">
+                                            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M12 4.562L7.768 9.64a1 1 0 11-1.536-1.28l5-6a1 1 0 011.536 0l5 6a1 1 0 11-1.536 1.28L12 4.562z" />
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M3.5 9a1 1 0 00-.923 1.385l3.654 8.769A3 3 0 009 21h6a3 3 0 002.77-1.846l3.653-8.77A1 1 0 0020.5 9h-17zM14 15a2 2 0 11-4 0 2 2 0 014 0z" />
+                                            </svg>
+
+                                        </a>
+                                    </div>
+                                    <div class="item-links d-flex justify-content-between">
+                                        <a href="#" class="item-link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <circle cx="10" cy="20.5" r="1"></circle>
+                                                <circle cx="18" cy="20.5" r="1"></circle>
+                                                <path
+                                                    d="M2.5 2.5h3l2.7 12.4a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6l1.6-8.4H7.1">
+                                                </path>
+                                            </svg>
+                                            Buyurtma berish
+                                        </a>
+                                        <a class="item-link text-muted" href="#">
+                                            <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                id="more-icon">
+                                                <path
+                                                    d="M14 2H2C1.267 2 .667 2.6.667 3.333v9.334C.667 13.4 1.267 14 2 14h12c.733 0 1.333-.6 1.333-1.333V3.333C15.333 2.6 14.733 2 14 2zm0 10.667H2V3.333h12v9.334zm-10.667-6h8.457L9.333 8h-6V6.667zm0-2h9.176L10.5 6H3.333V4.667z">
+                                                </path>
+                                            </svg>
+                                            Рассрочка
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <img src="./assets/images/dell.webp" alt="" class="item-img">
+
+                                <div class="item-info">
+                                    <a href="#"
+                                        class="item-tag btn btn-primary btn-sm mb-2 d-inline-block snow border-0">Dell</a>
+                                    <a href="#" class="item-title  d-block  ">
+                                        <h5 class="h5 fw-bold">Dell xps new 13' i7 11th gen 16/512 UHD 4k+ </h5>
+                                    </a>
+                                    <div class="item-rate d-flex mb-3 align-items-center">
+                                        <div class="item-star me-2">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <div class="item-comment">
+                                            <span class="text-muted">
+                                                <i class="far fa-comment-alt"></i>
+                                                6 ta sharh </span>
+                                        </div>
+                                    </div>
+                                    <div class="item-price d-flex mb-3 justify-content-between align-items-center">
+                                        <h6 class="price">
+                                            <span class="d-block text-danger text-decoration-line-through">16 809 000
+                                                so'm</span>
+                                            16 505 000 so'm
+                                        </h6>
+                                        <a href="#" class="item-cart">
+                                            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M12 4.562L7.768 9.64a1 1 0 11-1.536-1.28l5-6a1 1 0 011.536 0l5 6a1 1 0 11-1.536 1.28L12 4.562z" />
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M3.5 9a1 1 0 00-.923 1.385l3.654 8.769A3 3 0 009 21h6a3 3 0 002.77-1.846l3.653-8.77A1 1 0 0020.5 9h-17zM14 15a2 2 0 11-4 0 2 2 0 014 0z" />
+                                            </svg>
+
+                                        </a>
+                                    </div>
+                                    <div class="item-links d-flex justify-content-between">
+                                        <a href="#" class="item-link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <circle cx="10" cy="20.5" r="1"></circle>
+                                                <circle cx="18" cy="20.5" r="1"></circle>
+                                                <path
+                                                    d="M2.5 2.5h3l2.7 12.4a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6l1.6-8.4H7.1">
+                                                </path>
+                                            </svg>
+                                            Buyurtma berish
+                                        </a>
+                                        <a class="item-link text-muted" href="#">
+                                            <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                id="more-icon">
+                                                <path
+                                                    d="M14 2H2C1.267 2 .667 2.6.667 3.333v9.334C.667 13.4 1.267 14 2 14h12c.733 0 1.333-.6 1.333-1.333V3.333C15.333 2.6 14.733 2 14 2zm0 10.667H2V3.333h12v9.334zm-10.667-6h8.457L9.333 8h-6V6.667zm0-2h9.176L10.5 6H3.333V4.667z">
+                                                </path>
+                                            </svg>
+                                            Рассрочка
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="carousel-wrapper mb-5">
+                        <div class="carousel-header d-flex p-4 justify-content-between align-items-center">
+                            <h5 class="carousel-name text-muted fw-bolder">Yangi Chegirmalar</h5>
+                            <div class="carousel-triggers">
+                                <a href="jacascript:void(0)"
+                                    class="btn btn-primary border-0 rounded-3 btn-sm arrow next-trigger">
+                                    <i class="fas fa-chevron-left"></i>
+                                </a>
+                                <a href="jacascript:void(0)"
+                                    class="btn btn-primary border-0 rounded-3 btn-sm arrow prev-trigger">
+                                    <i class="fas fa-chevron-right"></i>
+
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slick-carousel-wrapper sale p-4">
+                            <div class="item">
+                                <img src="./assets/images/fridge.jpeg" alt="" class="item-img">
+                                <div class="item-label">
+                                    Chegirma
+                                </div>
+                                <div class="item-info">
+                                    <a href="#"
+                                        class="item-tag btn btn-primary btn-sm mb-2 d-inline-block snow border-0">Samsung</a>
+                                    <a href="#" class="item-title  d-block  ">
+                                        <h5 class="h5 fw-bold">
+                                            Холодильник Samsung ART RT-35K5440S8 (Стальной) </h5>
+                                    </a>
+                                    <div class="item-rate d-flex mb-3 align-items-center">
+                                        <div class="item-star me-2">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <div class="item-comment">
+                                            <span class="text-muted">
+                                                <i class="far fa-comment-alt"></i>
+                                                6 ta sharh </span>
+                                        </div>
+                                    </div>
+                                    <div class="item-price d-flex justify-content-between align-items-center">
+                                        <h6 class="price">
+                                            <span class="d-block text-danger text-decoration-line-through">6 689 000
+                                                so'm</span>
+                                            6 605 000 so'm
+                                        </h6>
+                                        <a href="#" class="item-cart">
+                                            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M12 4.562L7.768 9.64a1 1 0 11-1.536-1.28l5-6a1 1 0 011.536 0l5 6a1 1 0 11-1.536 1.28L12 4.562z" />
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M3.5 9a1 1 0 00-.923 1.385l3.654 8.769A3 3 0 009 21h6a3 3 0 002.77-1.846l3.653-8.77A1 1 0 0020.5 9h-17zM14 15a2 2 0 11-4 0 2 2 0 014 0z" />
+                                            </svg>
+
+                                        </a>
+                                    </div>
+                                    <div class="item-links d-flex justify-content-between">
+                                        <a href="#" class="item-link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <circle cx="10" cy="20.5" r="1"></circle>
+                                                <circle cx="18" cy="20.5" r="1"></circle>
+                                                <path
+                                                    d="M2.5 2.5h3l2.7 12.4a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6l1.6-8.4H7.1">
+                                                </path>
+                                            </svg>
+                                            Buyurtma berish
+                                        </a>
+                                        <a class="item-link text-muted" href="#">
+                                            <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                id="more-icon">
+                                                <path
+                                                    d="M14 2H2C1.267 2 .667 2.6.667 3.333v9.334C.667 13.4 1.267 14 2 14h12c.733 0 1.333-.6 1.333-1.333V3.333C15.333 2.6 14.733 2 14 2zm0 10.667H2V3.333h12v9.334zm-10.667-6h8.457L9.333 8h-6V6.667zm0-2h9.176L10.5 6H3.333V4.667z">
+                                                </path>
+                                            </svg>
+                                            Рассрочка
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <img src="./assets/images/gas.jpg" alt="" class="item-img">
+                                <div class="item-label">
+                                    Chegirma
+                                </div>
+                                <div class="item-info">
+                                    <a href="#"
+                                        class="item-tag btn btn-primary btn-sm mb-2 d-inline-block snow border-0">Gefest</a>
+                                    <a href="#" class="item-title  d-block  ">
+                                        <h5 class="h5 fw-bold">
+                                            Газовая плита GEFEST 6100-03 0004 (Стальная) </h5>
+                                    </a>
+                                    <div class="item-rate d-flex mb-3 align-items-center">
+                                        <div class="item-star me-2">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <div class="item-comment">
+                                            <span class="text-muted">
+                                                <i class="far fa-comment-alt"></i>
+                                                6 ta sharh </span>
+                                        </div>
+                                    </div>
+                                    <div class="item-price d-flex justify-content-between align-items-center">
+                                        <h6 class="price">
+                                            <span class="d-block text-danger text-decoration-line-through">4 689 000
+                                                so'm</span>
+                                            4 605 000 so'm
+                                        </h6>
+                                        <a href="#" class="item-cart">
+                                            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M12 4.562L7.768 9.64a1 1 0 11-1.536-1.28l5-6a1 1 0 011.536 0l5 6a1 1 0 11-1.536 1.28L12 4.562z" />
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M3.5 9a1 1 0 00-.923 1.385l3.654 8.769A3 3 0 009 21h6a3 3 0 002.77-1.846l3.653-8.77A1 1 0 0020.5 9h-17zM14 15a2 2 0 11-4 0 2 2 0 014 0z" />
+                                            </svg>
+
+                                        </a>
+                                    </div>
+                                    <div class="item-links d-flex justify-content-between">
+                                        <a href="#" class="item-link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <circle cx="10" cy="20.5" r="1"></circle>
+                                                <circle cx="18" cy="20.5" r="1"></circle>
+                                                <path
+                                                    d="M2.5 2.5h3l2.7 12.4a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6l1.6-8.4H7.1">
+                                                </path>
+                                            </svg>
+                                            Buyurtma berish
+                                        </a>
+                                        <a class="item-link text-muted" href="#">
+                                            <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                id="more-icon">
+                                                <path
+                                                    d="M14 2H2C1.267 2 .667 2.6.667 3.333v9.334C.667 13.4 1.267 14 2 14h12c.733 0 1.333-.6 1.333-1.333V3.333C15.333 2.6 14.733 2 14 2zm0 10.667H2V3.333h12v9.334zm-10.667-6h8.457L9.333 8h-6V6.667zm0-2h9.176L10.5 6H3.333V4.667z">
+                                                </path>
+                                            </svg>
+                                            Рассрочка
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <img src="./assets/images/1894.jpg" alt="" class="item-img">
+
+                                <div class="item-info">
+                                    <a href="#"
+                                        class="item-tag btn btn-primary btn-sm mb-2 d-inline-block snow border-0">Xiaomi</a>
+                                    <a href="#" class="item-title  d-block  ">
+                                        <h5 class="h5 fw-bold">
+                                            Jorj Oruell: 1984 (Qattiq muqova) </h5>
+                                    </a>
+                                    <div class="item-rate d-flex mb-3 align-items-center">
+                                        <div class="item-star me-2">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <div class="item-comment">
+                                            <span class="text-muted">
+                                                <i class="far fa-comment-alt"></i>
+                                                6 ta sharh </span>
+                                        </div>
+                                    </div>
+                                    <div class="item-price d-flex justify-content-between align-items-center">
+                                        <h6 class="price">
+                                            <span class="d-block text-danger text-decoration-line-through">89 000
+                                                so'm</span>
+                                            50 000 so'm
+                                        </h6>
+                                        <a href="#" class="item-cart">
+                                            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M12 4.562L7.768 9.64a1 1 0 11-1.536-1.28l5-6a1 1 0 011.536 0l5 6a1 1 0 11-1.536 1.28L12 4.562z" />
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M3.5 9a1 1 0 00-.923 1.385l3.654 8.769A3 3 0 009 21h6a3 3 0 002.77-1.846l3.653-8.77A1 1 0 0020.5 9h-17zM14 15a2 2 0 11-4 0 2 2 0 014 0z" />
+                                            </svg>
+
+                                        </a>
+                                    </div>
+                                    <div class="item-links d-flex justify-content-between">
+                                        <a href="#" class="item-link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <circle cx="10" cy="20.5" r="1"></circle>
+                                                <circle cx="18" cy="20.5" r="1"></circle>
+                                                <path
+                                                    d="M2.5 2.5h3l2.7 12.4a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6l1.6-8.4H7.1">
+                                                </path>
+                                            </svg>
+                                            Buyurtma berish
+                                        </a>
+                                        <a class="item-link text-muted" href="#">
+                                            <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                id="more-icon">
+                                                <path
+                                                    d="M14 2H2C1.267 2 .667 2.6.667 3.333v9.334C.667 13.4 1.267 14 2 14h12c.733 0 1.333-.6 1.333-1.333V3.333C15.333 2.6 14.733 2 14 2zm0 10.667H2V3.333h12v9.334zm-10.667-6h8.457L9.333 8h-6V6.667zm0-2h9.176L10.5 6H3.333V4.667z">
+                                                </path>
+                                            </svg>
+                                            Рассрочка
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <img src="./assets/images/iphone.jpg" alt="" class="item-img">
+                                <div class="item-label">
+                                    Chegirma
+                                </div>
+                                <div class="item-info">
+                                    <a href="#"
+                                        class="item-tag btn btn-primary btn-sm mb-2 d-inline-block snow border-0">Apple</a>
+                                    <a href="#" class="item-title  d-block  ">
+                                        <h5 class="h5 fw-bold">
+                                            Смартфон iPhone 8 256GB Gray </h5>
+                                    </a>
+                                    <div class="item-rate d-flex mb-3 align-items-center">
+                                        <div class="item-star me-2">
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <div class="item-comment">
+                                            <span class="text-muted">
+                                                <i class="far fa-comment-alt"></i>
+                                                6 ta sharh </span>
+                                        </div>
+                                    </div>
+                                    <div class="item-price d-flex justify-content-between align-items-center">
+                                        <h6 class="price">
+                                            <span class="d-block text-danger text-decoration-line-through">5 890 000
+                                                so'm</span>
+                                            5 550 000 so'm
+                                        </h6>
+                                        <a href="#" class="item-cart">
+                                            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M12 4.562L7.768 9.64a1 1 0 11-1.536-1.28l5-6a1 1 0 011.536 0l5 6a1 1 0 11-1.536 1.28L12 4.562z" />
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M3.5 9a1 1 0 00-.923 1.385l3.654 8.769A3 3 0 009 21h6a3 3 0 002.77-1.846l3.653-8.77A1 1 0 0020.5 9h-17zM14 15a2 2 0 11-4 0 2 2 0 014 0z" />
+                                            </svg>
+
+                                        </a>
+                                    </div>
+                                    <div class="item-links d-flex justify-content-between">
+                                        <a href="#" class="item-link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <circle cx="10" cy="20.5" r="1"></circle>
+                                                <circle cx="18" cy="20.5" r="1"></circle>
+                                                <path
+                                                    d="M2.5 2.5h3l2.7 12.4a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6l1.6-8.4H7.1">
+                                                </path>
+                                            </svg>
+                                            Buyurtma berish
+                                        </a>
+                                        <a class="item-link text-muted" href="#">
+                                            <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                id="more-icon">
+                                                <path
+                                                    d="M14 2H2C1.267 2 .667 2.6.667 3.333v9.334C.667 13.4 1.267 14 2 14h12c.733 0 1.333-.6 1.333-1.333V3.333C15.333 2.6 14.733 2 14 2zm0 10.667H2V3.333h12v9.334zm-10.667-6h8.457L9.333 8h-6V6.667zm0-2h9.176L10.5 6H3.333V4.667z">
+                                                </path>
+                                            </svg>
+                                            Рассрочка
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <img src="./assets/images/coffee.jpg" alt="" class="item-img">
+
+                                <div class="item-info">
+                                    <a href="#"
+                                        class="item-tag btn btn-primary btn-sm mb-2 d-inline-block snow border-0">Philips</a>
+                                    <a href="#" class="item-title  d-block  ">
+                                        <h5 class="h5 fw-bold"> Кофемашина Philips EP5060 Series 5000 </h5>
+                                    </a>
+                                    <div class="item-rate d-flex mb-3 align-items-center">
+                                        <div class="item-star me-2">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <div class="item-comment">
+                                            <span class="text-muted">
+                                                <i class="far fa-comment-alt"></i>
+                                                6 ta sharh </span>
+                                        </div>
+                                    </div>
+                                    <div class="item-price d-flex mb-3 justify-content-between align-items-center">
+                                        <h6 class="price">
+                                            <span class="d-block text-danger text-decoration-line-through">16 809 000
+                                                so'm</span>
+                                            5 505 000 so'm
+                                        </h6>
+                                        <a href="#" class="item-cart">
+                                            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M12 4.562L7.768 9.64a1 1 0 11-1.536-1.28l5-6a1 1 0 011.536 0l5 6a1 1 0 11-1.536 1.28L12 4.562z" />
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M3.5 9a1 1 0 00-.923 1.385l3.654 8.769A3 3 0 009 21h6a3 3 0 002.77-1.846l3.653-8.77A1 1 0 0020.5 9h-17zM14 15a2 2 0 11-4 0 2 2 0 014 0z" />
+                                            </svg>
+
+                                        </a>
+                                    </div>
+                                    <div class="item-links d-flex justify-content-between">
+                                        <a href="#" class="item-link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <circle cx="10" cy="20.5" r="1"></circle>
+                                                <circle cx="18" cy="20.5" r="1"></circle>
+                                                <path
+                                                    d="M2.5 2.5h3l2.7 12.4a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6l1.6-8.4H7.1">
+                                                </path>
+                                            </svg>
+                                            Buyurtma berish
+                                        </a>
+                                        <a class="item-link text-muted" href="#">
+                                            <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                id="more-icon">
+                                                <path
+                                                    d="M14 2H2C1.267 2 .667 2.6.667 3.333v9.334C.667 13.4 1.267 14 2 14h12c.733 0 1.333-.6 1.333-1.333V3.333C15.333 2.6 14.733 2 14 2zm0 10.667H2V3.333h12v9.334zm-10.667-6h8.457L9.333 8h-6V6.667zm0-2h9.176L10.5 6H3.333V4.667z">
+                                                </path>
+                                            </svg>
+                                            Рассрочка
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <img src="./assets/images/dell.webp" alt="" class="item-img">
+
+                                <div class="item-info">
+                                    <a href="#"
+                                        class="item-tag btn btn-primary btn-sm mb-2 d-inline-block snow border-0">Dell</a>
+                                    <a href="#" class="item-title  d-block  ">
+                                        <h5 class="h5 fw-bold">Dell xps new 13' i7 11th gen 16/512 UHD 4k+ </h5>
+                                    </a>
+                                    <div class="item-rate d-flex mb-3 align-items-center">
+                                        <div class="item-star me-2">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <div class="item-comment">
+                                            <span class="text-muted">
+                                                <i class="far fa-comment-alt"></i>
+                                                6 ta sharh </span>
+                                        </div>
+                                    </div>
+                                    <div class="item-price d-flex mb-3 justify-content-between align-items-center">
+                                        <h6 class="price">
+                                            <span class="d-block text-danger text-decoration-line-through">16 809 000
+                                                so'm</span>
+                                            16 505 000 so'm
+                                        </h6>
+                                        <a href="#" class="item-cart">
+                                            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M12 4.562L7.768 9.64a1 1 0 11-1.536-1.28l5-6a1 1 0 011.536 0l5 6a1 1 0 11-1.536 1.28L12 4.562z" />
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M3.5 9a1 1 0 00-.923 1.385l3.654 8.769A3 3 0 009 21h6a3 3 0 002.77-1.846l3.653-8.77A1 1 0 0020.5 9h-17zM14 15a2 2 0 11-4 0 2 2 0 014 0z" />
+                                            </svg>
+
+                                        </a>
+                                    </div>
+                                    <div class="item-links d-flex justify-content-between">
+                                        <a href="#" class="item-link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <circle cx="10" cy="20.5" r="1"></circle>
+                                                <circle cx="18" cy="20.5" r="1"></circle>
+                                                <path
+                                                    d="M2.5 2.5h3l2.7 12.4a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6l1.6-8.4H7.1">
+                                                </path>
+                                            </svg>
+                                            Buyurtma berish
+                                        </a>
+                                        <a class="item-link text-muted" href="#">
+                                            <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                id="more-icon">
+                                                <path
+                                                    d="M14 2H2C1.267 2 .667 2.6.667 3.333v9.334C.667 13.4 1.267 14 2 14h12c.733 0 1.333-.6 1.333-1.333V3.333C15.333 2.6 14.733 2 14 2zm0 10.667H2V3.333h12v9.334zm-10.667-6h8.457L9.333 8h-6V6.667zm0-2h9.176L10.5 6H3.333V4.667z">
+                                                </path>
+                                            </svg>
+                                            Рассрочка
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
     <script src="./assets/libs/popper.min.js"></script>
     <script src="./assets/libs/jquery-3.5.1.min.js"></script>
     <script src="./assets/libs/bootstrap.min.js"></script>
+    <script src="./assets/libs/slick-1.8.1/slick/slick.min.js"></script>
     <script src="./assets/script/app.js"></script>
+
 
 </body>
 
