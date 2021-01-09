@@ -35,6 +35,13 @@ $('.wided').slick({
                 slidesToShow: 1,
                 slidesToScroll: 1
             }
+        },
+        {
+            breakpoint: 380,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
         }
     ]
 });
@@ -44,6 +51,39 @@ $('.sale').slick({
     speed: 300,
     nextArrow: $('.prev-trigger'),
     prevArrow: $('.next-trigger'),
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    responsive: [{
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
+    ]
+});
+$('.accessories').slick({
+    dots: false,
+    infinite: true,
+    speed: 300,
+    nextArrow: $('.prev-triger'),
+    prevArrow: $('.next-triger'),
     slidesToShow: 4,
     slidesToScroll: 1,
     responsive: [{

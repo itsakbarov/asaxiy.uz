@@ -455,3 +455,88 @@ button.slick-arrow {
         color: #000;
     }
 }
+
+.weekly-item {
+    border: none;
+    box-shadow: 0px 10px 30px rgba(209, 213, 223, 0.5);
+    border-radius: 20px;
+
+    .card-heading a{
+        height: 60px;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-bottom: 4px;
+        color: #141821;
+        font-size: 15px;
+        line-height: 20px;
+        transition: color 0.2s ease;
+    }
+     .item-rate {
+
+            .item-star {
+                font-size: 12px;
+
+                .fa-star {
+                    color: #008dff
+                }
+            }
+
+            .item-comment {
+                font-size: 12px;
+            }
+        }
+
+        .item-links {
+            .item-link {
+                font-size: 12px;
+                color: #C2C6D1;
+                text-decoration: none;
+                display: flex;
+                align-items: cneterl;
+                outline: 0;
+                transition: all 0.2s ease;
+
+                &:hover {
+
+                    color: #FE7300 !important;
+
+                    svg {
+                        fill: #FE7300;
+                    }
+                }
+
+                svg {
+                    margin-right: 5px;
+                    fill: #C2C6D1;
+                }
+            }
+        }
+
+        .item-price {
+            font-size: 18px;
+            margin-bottom: 20px;
+
+            .text-danger {
+                font-size: 12px;
+            }
+
+            .item-cart {
+                svg {
+                    transform: scale(1.5);
+
+                    transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) all 0.5s;
+                    fill: #C2C6D1
+                }
+
+                &:hover {
+
+                    svg {
+                        fill: #008DFF
+                    }
+                }
+            }
+        }
+}
