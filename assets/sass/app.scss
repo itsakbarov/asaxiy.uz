@@ -461,7 +461,7 @@ button.slick-arrow {
     box-shadow: 0px 10px 30px rgba(209, 213, 223, 0.5);
     border-radius: 20px;
 
-    .card-heading a{
+    .card-heading a {
         height: 60px;
         display: -webkit-box;
         -webkit-line-clamp: 3;
@@ -474,69 +474,134 @@ button.slick-arrow {
         line-height: 20px;
         transition: color 0.2s ease;
     }
-     .item-rate {
 
-            .item-star {
-                font-size: 12px;
+    .item-rate {
 
-                .fa-star {
-                    color: #008dff
-                }
-            }
+        .item-star {
+            font-size: 12px;
 
-            .item-comment {
-                font-size: 12px;
+            .fa-star {
+                color: #008dff
             }
         }
 
-        .item-links {
-            .item-link {
-                font-size: 12px;
-                color: #C2C6D1;
-                text-decoration: none;
-                display: flex;
-                align-items: cneterl;
-                outline: 0;
-                transition: all 0.2s ease;
+        .item-comment {
+            font-size: 12px;
+        }
+    }
 
-                &:hover {
+    .item-links {
+        .item-link {
+            font-size: 12px;
+            color: #C2C6D1;
+            text-decoration: none;
+            display: flex;
+            align-items: cneterl;
+            outline: 0;
+            transition: all 0.2s ease;
 
-                    color: #FE7300 !important;
+            &:hover {
 
-                    svg {
-                        fill: #FE7300;
-                    }
-                }
+                color: #FE7300 !important;
 
                 svg {
-                    margin-right: 5px;
-                    fill: #C2C6D1;
+                    fill: #FE7300;
                 }
             }
+
+            svg {
+                margin-right: 5px;
+                fill: #C2C6D1;
+            }
+        }
+    }
+
+    .item-price {
+        font-size: 18px;
+        margin-bottom: 20px;
+
+        .text-danger {
+            font-size: 12px;
         }
 
-        .item-price {
-            font-size: 18px;
-            margin-bottom: 20px;
+        .item-cart {
+            svg {
+                transform: scale(1.5);
 
-            .text-danger {
-                font-size: 12px;
+                transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) all 0.5s;
+                fill: #C2C6D1
             }
 
-            .item-cart {
+            &:hover {
+
                 svg {
-                    transform: scale(1.5);
-
-                    transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) all 0.5s;
-                    fill: #C2C6D1
-                }
-
-                &:hover {
-
-                    svg {
-                        fill: #008DFF
-                    }
+                    fill: #008DFF
                 }
             }
         }
+    }
+}
+
+.brands {
+
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 15px 50px;
+    box-shadow: 0px 10px 30px rgba(209, 213, 223, 0.5);
+
+    img {
+        width: 95px;
+        height: 100%;
+    }
+}
+
+.app-section {
+    border-radius: 20px;
+    background: #008DFF;
+    height: 250px;
+    overflow: hidden;
+
+    .app-img {
+        position: absolute !important;
+        width: 50%;
+    }
+
+    .lh4 {
+        line-height: 4;
+    }
+}
+
+.feature-section {
+
+    border-radius: 20px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    padding: 25px 50px;
+    box-shadow: 0px 10px 30px rgba(209, 213, 223, 0.5);
+    .item-heading{
+        font-size: 16px;
+    line-height: 24px;
+    color: #000;
+    margin-bottom: 4px;
+    }
+    .item-text{
+    margin-bottom: 0;
+    font-size: 14px;
+    width: 170px;
+    font-weight: normal;
+    line-height: 21px;
+    color: #858997
+    }
+}
+.footer{
+
+    padding-top: 42px;
+    padding-bottom: 27px;
+    background-color: #008DFF;
+    position: relative;
 }
