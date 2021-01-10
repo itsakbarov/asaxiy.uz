@@ -617,7 +617,7 @@ button.slick-arrow {
 
 .back-to-top {
   position: fixed;
-  bottom: 25px;
+  bottom: 55px;
   z-index: 855555;
   right: 25px;
   display: none;
