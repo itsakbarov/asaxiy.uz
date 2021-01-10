@@ -12,7 +12,7 @@ $('.wided').slick({
     nextArrow: $('.prev-arrow'),
     prevArrow: $('.next-arrow'),
     slidesToShow: 4,
-    slidesToScroll: 1,
+    slidesToScroll: 2,
     responsive: [{
             breakpoint: 1024,
             settings: {
@@ -52,7 +52,7 @@ $('.sale').slick({
     nextArrow: $('.prev-trigger'),
     prevArrow: $('.next-trigger'),
     slidesToShow: 4,
-    slidesToScroll: 1,
+    slidesToScroll: 2,
     responsive: [{
             breakpoint: 1024,
             settings: {
@@ -85,7 +85,7 @@ $('.accessories').slick({
     nextArrow: $('.prev-triger'),
     prevArrow: $('.next-triger'),
     slidesToShow: 4,
-    slidesToScroll: 1,
+    slidesToScroll: 2,
     responsive: [{
             breakpoint: 1024,
             settings: {
@@ -158,3 +158,10 @@ $(document).ready(function () {
         return false;
     });
 });
+
+$('.hamburger-icon').click( function(e) {
+    e.preventDefault();
+    $('.fluid-menu').toggleClass('active')
+    $('.burger').toggleClass('active')
+    console(log('fuckkk'))
+})

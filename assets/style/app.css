@@ -622,3 +622,157 @@ button.slick-arrow {
   right: 25px;
   display: none;
 }
+
+.fluid-menu {
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+  overflow: hidden;
+  opacity: 0;
+  -webkit-transition: all cubic-bezier(0.895, 0.03, 0.685, 0.22) 0.3s;
+  transition: all cubic-bezier(0.895, 0.03, 0.685, 0.22) 0.3s;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.fluid-menu.active {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.fluid-menu-left {
+  width: 290px;
+  min-width: 210px;
+  background-color: #f8f8f8;
+  padding-top: 16px;
+  padding-bottom: 10px;
+}
+
+.fluid-menu-left .tab {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40px;
+  color: #000;
+  padding-left: 37px;
+  font-size: 13px;
+  font-family: 'Yandex Sans Display';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  padding-right: 15px;
+  position: relative;
+}
+
+.fluid-menu-left .tab.active {
+  background: white;
+  width: 110%;
+  color: #008dff;
+}
+
+.fluid-menu-left .tab img {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+}
+
+.fluid-menu-left li {
+  list-style: none;
+}
+
+.fluid-menu-right {
+  background: #fff;
+  padding: 15px 0 0 40px;
+}
+
+.fluid-menu-right a {
+  padding-left: 0;
+  text-decoration: none;
+}
+
+.accessories .item {
+  border-radius: 20px;
+  border: 5px solid #F5F5FD;
+}
+
+.hamburger-icon {
+  position: relative;
+}
+
+.hamburger-icon .line {
+  position: relative;
+  display: block;
+  width: 20px;
+  height: 2px;
+  margin-top: 4px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 10px;
+  background-color: #008DFF;
+}
+
+.hamburger-icon .line:first-child {
+  margin-top: 0;
+}
+
+.hamburger-icon .burger {
+  margin-right: 5px;
+}
+
+.hamburger-icon .burger.active .line:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-icon .burger.active .line:nth-child(1) {
+  -webkit-transform: translateY(6px) rotate(45deg);
+          transform: translateY(6px) rotate(45deg);
+}
+
+.hamburger-icon .burger.active .line:nth-child(3) {
+  -webkit-transform: translateY(-6px) rotate(-45deg);
+          transform: translateY(-6px) rotate(-45deg);
+}
+
+.mobile-hamburger-icon {
+  position: relative;
+}
+
+.mobile-hamburger-icon .line {
+  position: relative;
+  display: block;
+  width: 20px;
+  height: 2px;
+  margin-top: 4px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 10px;
+  background-color: #008DFF;
+}
+
+.mobile-hamburger-icon .line:first-child {
+  margin-top: 0;
+}
+
+.mobile-hamburger-icon .burger {
+  margin-right: 5px;
+}
+
+.mobile-hamburger-icon .burger.active .line:nth-child(2) {
+  opacity: 0;
+}
+
+.mobile-hamburger-icon .burger.active .line:nth-child(1) {
+  -webkit-transform: translateY(6px) rotate(45deg);
+          transform: translateY(6px) rotate(45deg);
+}
+
+.mobile-hamburger-icon .burger.active .line:nth-child(3) {
+  -webkit-transform: translateY(-6px) rotate(-45deg);
+          transform: translateY(-6px) rotate(-45deg);
+}
