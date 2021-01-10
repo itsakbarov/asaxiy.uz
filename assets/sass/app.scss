@@ -615,6 +615,12 @@ button.slick-arrow {
             transform: translateX(10px);
         }
     }
+
+    .extra-foot {
+        border-top: 0.2px solid rgba(255, 255, 255, 0.4);
+        border-bottom: 0.2px solid rgba(255, 255, 255, 0.4);
+        margin-top: 20px;
+    }
 }
 
 .back-to-top {
@@ -742,14 +748,71 @@ button.slick-arrow {
     }
 }
 
+.menu-burger {
+    margin-right: 5px;
+
+    &.active {
+        .line:nth-child(2) {
+            opacity: 0;
+
+        }
+
+        .line:nth-child(1) {
+            transform: translateY(9px) rotate(45deg);
+        }
+
+        .line:nth-child(3) {
+            transform: translateY(-6px) rotate(-45deg);
+        }
+    }
+}
+
+.mobile-menu {
+    left: 0;
+    padding: 0;
+    top: 0;
+    bottom: 0;
+    width: 0px;
+    opacity: 0;
+    z-index: 99999;
+    background-color: #fff;
+    transition: all ease 0.4s;
+
+    &.active {
+        opacity: 1;
+        width: 320px;
+        padding: 20px;
+    }
+}
+
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    transition: all ease 0.3s;
+    z-index: -1;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+
+    &.active {
+        z-index: 10000;
+        opacity: 1;
+    }
+}
+
 .mobile-hamburger-icon {
     position: relative;
 
     .line {
         position: relative;
         display: block;
-        width: 20px;
-        height: 2px;
+        width: 30px;
+        height: 4px;
         margin-top: 4px;
         transition: 0.3s;
         border-radius: 10px;

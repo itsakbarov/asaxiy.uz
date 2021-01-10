@@ -615,6 +615,12 @@ button.slick-arrow {
           transform: translateX(10px);
 }
 
+.footer .extra-foot {
+  border-top: 0.2px solid rgba(255, 255, 255, 0.4);
+  border-bottom: 0.2px solid rgba(255, 255, 255, 0.4);
+  margin-top: 20px;
+}
+
 .back-to-top {
   position: fixed;
   bottom: 85px;
@@ -739,6 +745,64 @@ button.slick-arrow {
           transform: translateY(-6px) rotate(-45deg);
 }
 
+.menu-burger {
+  margin-right: 5px;
+}
+
+.menu-burger.active .line:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-burger.active .line:nth-child(1) {
+  -webkit-transform: translateY(9px) rotate(45deg);
+          transform: translateY(9px) rotate(45deg);
+}
+
+.menu-burger.active .line:nth-child(3) {
+  -webkit-transform: translateY(-6px) rotate(-45deg);
+          transform: translateY(-6px) rotate(-45deg);
+}
+
+.mobile-menu {
+  left: 0;
+  padding: 0;
+  top: 0;
+  bottom: 0;
+  width: 0px;
+  opacity: 0;
+  z-index: 99999;
+  background-color: #fff;
+  -webkit-transition: all ease 0.4s;
+  transition: all ease 0.4s;
+}
+
+.mobile-menu.active {
+  opacity: 1;
+  width: 320px;
+  padding: 20px;
+}
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+  z-index: -1;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.overlay.active {
+  z-index: 10000;
+  opacity: 1;
+}
+
 .mobile-hamburger-icon {
   position: relative;
 }
@@ -746,8 +810,8 @@ button.slick-arrow {
 .mobile-hamburger-icon .line {
   position: relative;
   display: block;
-  width: 20px;
-  height: 2px;
+  width: 30px;
+  height: 4px;
   margin-top: 4px;
   -webkit-transition: 0.3s;
   transition: 0.3s;

@@ -165,3 +165,18 @@ $('.hamburger-icon').click( function(e) {
     $('.burger').toggleClass('active')
     console(log('fuckkk'))
 })
+$('.mobile-hamburger-icon').click(function (e) {
+    e.preventDefault();
+    $('.menu-burger').toggleClass('active')
+    $('.overlay').toggleClass('active')
+    $('body').toggleClass('overflow-hidden')
+    $('.mobile-menu').toggleClass('active')
+    console(log('fuckkk'))
+})
+$('.overlay').click(function (e) {
+    e.preventDefault();
+    $('.menu-burger').remove('active')
+    $('.overlay').remove('active')
+    $('body').remove('overflow-hidden')
+    $('.mobile-menu').remove('active')
+})
