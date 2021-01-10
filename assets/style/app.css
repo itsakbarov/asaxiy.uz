@@ -604,3 +604,21 @@ button.slick-arrow {
   background-color: #008DFF;
   position: relative;
 }
+
+.footer .foot-link {
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+.footer .foot-link:hover {
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 25px;
+  z-index: 855555;
+  right: 25px;
+  display: none;
+}

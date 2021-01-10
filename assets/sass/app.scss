@@ -604,4 +604,18 @@ button.slick-arrow {
     padding-bottom: 27px;
     background-color: #008DFF;
     position: relative;
+    .foot-link{
+        transition: all ease 0.5s;
+        &:hover{
+            transform: translateX(10px);
+        }
+    }
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 25px;
+    z-index: 855555;
+    right: 25px;
+    display: none;
 }
