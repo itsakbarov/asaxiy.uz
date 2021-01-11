@@ -183,3 +183,13 @@ $('.overlay').click(function (e) {
     $('body').remove('overflow-hidden')
     $('.mobile-menu').remove('active')
 })
+
+$('.game-tab').mouseover(function () {
+    console.log('hai');
+    $('.gamer-content ').toggleClass('active');
+    $('.game-tab').toggleClass('active');
+})
+$('.desktop-tab').mouseover(function () {
+    $('.desktop-content ').toggleClass('active');
+    $('.desktop-tab').toggleClass('active');
+})

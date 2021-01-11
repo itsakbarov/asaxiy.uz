@@ -268,9 +268,8 @@ a {
     user-select: none;
 }
 
-button.slick-arrow {
-    display: none !important;
-}
+
+
 
 .carousel-wrapper {
 
@@ -849,5 +848,29 @@ button.slick-arrow {
                 transform: translateY(-6px) rotate(-45deg);
             }
         }
+    }
+}
+
+.gamer-content {
+    display: none;
+
+    &.active {
+        display: block;
+    }
+}
+
+.desktop-content {
+    display: none;
+
+    &.active {
+        display: block;
+    }
+}
+
+.toy-content {
+    display: none;
+
+    &.active {
+        display: block;
     }
 }

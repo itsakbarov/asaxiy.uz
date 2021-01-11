@@ -851,3 +851,27 @@ button.slick-arrow {
   -webkit-transform: translateY(-6px) rotate(-45deg);
           transform: translateY(-6px) rotate(-45deg);
 }
+
+.gamer-content {
+  display: none;
+}
+
+.gamer-content.active {
+  display: block;
+}
+
+.desktop-content {
+  display: none;
+}
+
+.desktop-content.active {
+  display: block;
+}
+
+.toy-content {
+  display: none;
+}
+
+.toy-content.active {
+  display: block;
+}
