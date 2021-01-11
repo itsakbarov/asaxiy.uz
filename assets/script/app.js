@@ -2,7 +2,7 @@ console.log('loading...')
 
 
 var dropdownElementList = [].slice.call(document.querySelectorAll('.dropdown-toggle'))
-var dropdownList = dropdownElementList.map(function (dropdownToggleEl) {
+var dropdownList = dropdownElementList.map(function(dropdownToggleEl) {
     return new bootstrap.Dropdown(dropdownToggleEl)
 })
 $('.wided').slick({
@@ -145,15 +145,15 @@ $('.brands').slick({
         }
     ]
 });
-$(document).ready(function () {
-    $(window).scroll(function () {
+$(document).ready(function() {
+    $(window).scroll(function() {
         if ($(this).scrollTop() > 50) {
             $('#back-to-top').fadeIn();
         } else {
             $('#back-to-top').fadeOut();
         }
     });
-    $('#back-to-top').click(function () {
+    $('#back-to-top').click(function() {
         $('body,html').animate({
             scrollTop: 0
         }, 400);
@@ -161,13 +161,13 @@ $(document).ready(function () {
     });
 });
 
-$('.hamburger-icon').click(function (e) {
+$('.hamburger-icon').click(function(e) {
     e.preventDefault();
     $('.fluid-menu').toggleClass('active')
     $('.burger').toggleClass('active')
     console(log('fuckkk'))
 })
-$('.mobile-hamburger-icon').click(function (e) {
+$('.mobile-hamburger-icon').click(function(e) {
     e.preventDefault();
     $('.menu-burger').toggleClass('active')
     $('.overlay').toggleClass('active')
@@ -176,7 +176,7 @@ $('.mobile-hamburger-icon').click(function (e) {
     console(log('fuckkk'))
 })
 
-$('.overlay').click(function (e) {
+$('.overlay').click(function(e) {
     e.preventDefault();
     $('.menu-burger').remove('active')
     $('.overlay').remove('active')
@@ -184,12 +184,16 @@ $('.overlay').click(function (e) {
     $('.mobile-menu').remove('active')
 })
 
-$('.game-tab').mouseover(function () {
+$('.game-tab').hover(function() {
     console.log('hai');
     $('.gamer-content ').toggleClass('active');
     $('.game-tab').toggleClass('active');
 })
-$('.desktop-tab').mouseover(function () {
+$('.desktop-tab').hover(function() {
+    $('.desktop-content ').toggleClass('active');
+    $('.desktop-tab').toggleClass('active');
+})
+$('.desktop-content').hover(function() {
     $('.desktop-content ').toggleClass('active');
     $('.desktop-tab').toggleClass('active');
 })
