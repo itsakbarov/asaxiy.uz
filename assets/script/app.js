@@ -19,7 +19,7 @@ $('.wided').slick({
                 slidesToShow: 3,
                 slidesToScroll: 3,
                 infinite: true,
-                dots: true
+                dots: false
             }
         },
         {
@@ -59,7 +59,7 @@ $('.sale').slick({
                 slidesToShow: 3,
                 slidesToScroll: 3,
                 infinite: true,
-                dots: true
+                dots: false
             }
         },
         {
@@ -92,7 +92,7 @@ $('.accessories').slick({
                 slidesToShow: 3,
                 slidesToScroll: 3,
                 infinite: true,
-                dots: true
+                dots: false
             }
         },
         {
@@ -121,23 +121,25 @@ $('.brands').slick({
     responsive: [{
             breakpoint: 1024,
             settings: {
-                slidesToShow: 3,
+                slidesToShow: 4,
                 slidesToScroll: 3,
                 infinite: true,
-                dots: true
+                dots: false
             }
         },
         {
             breakpoint: 600,
             settings: {
-                slidesToShow: 2,
+                dots: false,
+                slidesToShow: 3,
                 slidesToScroll: 2
             }
         },
         {
             breakpoint: 480,
             settings: {
-                slidesToShow: 1,
+                dots: false,
+                slidesToShow: 2,
                 slidesToScroll: 1
             }
         }

@@ -423,6 +423,17 @@ button.slick-arrow {
   fill: #008DFF;
 }
 
+@media screen and (max-width: 767px) {
+  .mobile-responsive {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    overflow: hidden;
+  }
+}
+
 .aside {
   background-color: #fff;
   border-radius: 20px;

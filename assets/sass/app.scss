@@ -426,6 +426,14 @@ button.slick-arrow {
     }
 }
 
+@media screen and (max-width: 767px) {
+    .mobile-responsive {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow: hidden;
+    }
+}
+
 .aside {
     background-color: #fff;
     border-radius: 20px;
