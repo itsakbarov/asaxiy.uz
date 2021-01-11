@@ -159,7 +159,7 @@ $(document).ready(function () {
     });
 });
 
-$('.hamburger-icon').click( function(e) {
+$('.hamburger-icon').click(function (e) {
     e.preventDefault();
     $('.fluid-menu').toggleClass('active')
     $('.burger').toggleClass('active')
@@ -173,6 +173,7 @@ $('.mobile-hamburger-icon').click(function (e) {
     $('.mobile-menu').toggleClass('active')
     console(log('fuckkk'))
 })
+
 $('.overlay').click(function (e) {
     e.preventDefault();
     $('.menu-burger').remove('active')
