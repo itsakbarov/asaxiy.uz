@@ -16,7 +16,7 @@
     <style>
         .particles-js-canvas-el {
             position: fixed !important;
-            z-index: 9999999999999999999999999999999999 !important;
+            z-index: 1 !important;
             width: 100vw !important;
             height: 100vh !important;
             top: 0 !important;
@@ -24,6 +24,23 @@
             left: 0 !important;
             right: 0 !important;
             margin: auto !important;
+        }
+        
+        a,
+        button,
+        p,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        iframe {
+            z-index: 200;
+        }
+        
+        .row {
+            z-index: 999;
         }
     </style>
 </head>
@@ -2152,7 +2169,7 @@
     <script src="./assets/libs/popper.min.js"></script>
     <script src="./assets/libs/jquery-3.5.1.min.js"></script>
     <script src="./assets/libs/particles.js-master/particles.min.js"></script>
-    <script src="./assets/libs/particles.js-master/demo/js/app.js"></script>
+    <!-- <script src="./assets/libs/particles.js-master/demo/js/app.js"></script> -->
     <!-- <script src="./assets/libs/particlesjs-config.json"></script> -->
     <script src="./assets/libs/bootstrap.min.js"></script>
     <script src="./assets/libs/slick-1.8.1/slick/slick.min.js"></script>
