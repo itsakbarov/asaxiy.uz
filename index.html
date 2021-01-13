@@ -13,13 +13,14 @@
     <link rel="stylesheet" href="./assets/libs/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/style/app.min.css">
     <style>
-        .particles-js-canvas-el{
+        .particles-js-canvas-el {
             position: fixed;
             top: 0;
             left: 0;
             bottom: 0;
             right: 0;
         }
+        
         a,
         button,
         p,
@@ -36,7 +37,8 @@
         .row * {
             z-index: 999;
         }
-        .fluid-menu{
+        
+        .fluid-menu {
             z-index: 1000;
         }
     </style>
@@ -176,7 +178,7 @@
                         <li>
                             <a data-link-item="3" href="javascript:void(0)" class="tab text-decoration-none text-dark fw-bold desktop-tab"><img width="16" src="./assets/icon/desktop.png" alt=""> Komputer va orgtexnika</a>
                         </li>
-                        <li class="gamer-tab">
+                        <li>
                             <a data-link-item="4" href="javascript:void(0)" class="tab  text-decoration-none text-dark game-tab fw-bold"><img width="16" src="./assets/icon/gamepad.png" alt=""> Geymerlar uchun</a>
                         </li>
                         <li>
@@ -211,8 +213,7 @@
                     </ul>
                 </div>
                 <div class="col-lg-10 fluid-menu-right">
-                    <div class="gamer-content " data-list-order="0
-                    ">
+                    <div class="gamer-content menu-content" data-list-order="0">
                         <div class="content-inner">
                             <div class="row">
                                 <div class="col-lg-3">
@@ -261,7 +262,991 @@
                             </div>
                         </div>
                     </div>
-                    <div class="desktop-content ">
+                    <div class="desktop-content menu-content" data-list-order="1">
+                        <div class="content-inner">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Ноутбуки </a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Все товары</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Power Bank для ноутбука</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Сумки для ноутбуков</a>
+                                    </div>
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Носители информации</a>
+                                        <a href="#" class="nav-link text-black-50">Все товары</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Карты памяти</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">SSD-накопители</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Внутренние жесткие диски
+                                            (HDD)</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Внешние жесткие диски (Ext.
+                                            HDD)</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">USB флешки</a>
+                                    </div>
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Мониторы</a>
+                                        <a href="#" class="nav-link text-black-50">Все товары</a>
+                                    </div>
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Мышки и клавиатуры</a>
+                                        <a href="#" class="nav-link text-black-50">Все товары</a>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Модемы, роутеры и сетевое оборудование</a>
+                                        <a href="#" class="nav-link text-black-50">Сетевое оборудование</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">WiFi Роутеры и модемы (Для телефонной сети ADSL)</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">WiFi Роутеры и модемы (Оптика)</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Оборудование 3G/4G</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Адаптеры Wi-Fi</a>
+                                    </div>
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Комплектующие</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Видеокарты</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Оперативная память (DDR)</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Источники бесперебойного питания</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Внешние оптические приводы DVD RW</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Блоки питания</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Веб-камеры</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Материнские платы</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Процессоры</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Веб-камеры</a>
+                                    </div>
+
+
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Компьютеры и моноблоки</a>
+                                        <a href="#" class="nav-link text-black-50">Все товары</a>
+                                        <a href="#" class="nav-link text-black-50">Настольные компьютеры</a>
+                                        <a href="#" class="nav-link text-black-50">Моноблоки</a>
+                                    </div>
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Офисная техника </a>
+                                        <a href="#" class="nav-link text-black-50">Все товары</a>
+                                        <a href="#" class="nav-link text-black-50">Принтеры и сканеры </a>
+                                        <a href="#" class="nav-link text-black-50">Сканеры</a>
+                                        <a href="#" class="nav-link text-black-50">Калькуляторы </a>
+                                        <a href="#" class="nav-link text-black-50">Счетчики банкнот (купюр)</a>
+                                        <a href="#" class="nav-link text-black-50">Проекторы</a>
+                                        <a href="#" class="nav-link text-black-50">Портативные принтеры</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="item mb-4">
+                                        <!-- <a href="#" class="fw-bold mb-3 text-dark">Гарнитуры и наушники</a> -->
+                                        <!-- <a href="#" class="nav-link text-black-50">Все товары</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desktop-content menu-content" data-list-order="2">
+                        <div class="content-inner">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Ноутбуки </a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Все товары</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Power Bank для ноутбука</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Сумки для ноутбуков</a>
+                                    </div>
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Носители информации</a>
+                                        <a href="#" class="nav-link text-black-50">Все товары</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Карты памяти</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">SSD-накопители</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Внутренние жесткие диски
+                                            (HDD)</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Внешние жесткие диски (Ext.
+                                            HDD)</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">USB флешки</a>
+                                    </div>
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Мониторы</a>
+                                        <a href="#" class="nav-link text-black-50">Все товары</a>
+                                    </div>
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Мышки и клавиатуры</a>
+                                        <a href="#" class="nav-link text-black-50">Все товары</a>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Модемы, роутеры и сетевое оборудование</a>
+                                        <a href="#" class="nav-link text-black-50">Сетевое оборудование</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">WiFi Роутеры и модемы (Для телефонной сети ADSL)</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">WiFi Роутеры и модемы (Оптика)</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Оборудование 3G/4G</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Адаптеры Wi-Fi</a>
+                                    </div>
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Комплектующие</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Видеокарты</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Оперативная память (DDR)</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Источники бесперебойного питания</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Внешние оптические приводы DVD RW</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Блоки питания</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Веб-камеры</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Материнские платы</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Процессоры</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Веб-камеры</a>
+                                    </div>
+
+
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Компьютеры и моноблоки</a>
+                                        <a href="#" class="nav-link text-black-50">Все товары</a>
+                                        <a href="#" class="nav-link text-black-50">Настольные компьютеры</a>
+                                        <a href="#" class="nav-link text-black-50">Моноблоки</a>
+                                    </div>
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Офисная техника </a>
+                                        <a href="#" class="nav-link text-black-50">Все товары</a>
+                                        <a href="#" class="nav-link text-black-50">Принтеры и сканеры </a>
+                                        <a href="#" class="nav-link text-black-50">Сканеры</a>
+                                        <a href="#" class="nav-link text-black-50">Калькуляторы </a>
+                                        <a href="#" class="nav-link text-black-50">Счетчики банкнот (купюр)</a>
+                                        <a href="#" class="nav-link text-black-50">Проекторы</a>
+                                        <a href="#" class="nav-link text-black-50">Портативные принтеры</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="item mb-4">
+                                        <!-- <a href="#" class="fw-bold mb-3 text-dark">Гарнитуры и наушники</a> -->
+                                        <!-- <a href="#" class="nav-link text-black-50">Все товары</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desktop-content menu-content" data-list-order="3">
+                        <div class="content-inner">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Ноутбуки </a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Все товары</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Power Bank для ноутбука</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Сумки для ноутбуков</a>
+                                    </div>
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Носители информации</a>
+                                        <a href="#" class="nav-link text-black-50">Все товары</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Карты памяти</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">SSD-накопители</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Внутренние жесткие диски
+                                            (HDD)</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Внешние жесткие диски (Ext.
+                                            HDD)</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">USB флешки</a>
+                                    </div>
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Мониторы</a>
+                                        <a href="#" class="nav-link text-black-50">Все товары</a>
+                                    </div>
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Мышки и клавиатуры</a>
+                                        <a href="#" class="nav-link text-black-50">Все товары</a>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Модемы, роутеры и сетевое оборудование</a>
+                                        <a href="#" class="nav-link text-black-50">Сетевое оборудование</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">WiFi Роутеры и модемы (Для телефонной сети ADSL)</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">WiFi Роутеры и модемы (Оптика)</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Оборудование 3G/4G</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Адаптеры Wi-Fi</a>
+                                    </div>
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Комплектующие</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Видеокарты</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Оперативная память (DDR)</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Источники бесперебойного питания</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Внешние оптические приводы DVD RW</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Блоки питания</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Веб-камеры</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Материнские платы</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Процессоры</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Веб-камеры</a>
+                                    </div>
+
+
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Компьютеры и моноблоки</a>
+                                        <a href="#" class="nav-link text-black-50">Все товары</a>
+                                        <a href="#" class="nav-link text-black-50">Настольные компьютеры</a>
+                                        <a href="#" class="nav-link text-black-50">Моноблоки</a>
+                                    </div>
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Офисная техника </a>
+                                        <a href="#" class="nav-link text-black-50">Все товары</a>
+                                        <a href="#" class="nav-link text-black-50">Принтеры и сканеры </a>
+                                        <a href="#" class="nav-link text-black-50">Сканеры</a>
+                                        <a href="#" class="nav-link text-black-50">Калькуляторы </a>
+                                        <a href="#" class="nav-link text-black-50">Счетчики банкнот (купюр)</a>
+                                        <a href="#" class="nav-link text-black-50">Проекторы</a>
+                                        <a href="#" class="nav-link text-black-50">Портативные принтеры</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="item mb-4">
+                                        <!-- <a href="#" class="fw-bold mb-3 text-dark">Гарнитуры и наушники</a> -->
+                                        <!-- <a href="#" class="nav-link text-black-50">Все товары</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desktop-content menu-content" data-list-order="4">
+                        <div class="content-inner">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Ноутбуки </a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Все товары</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Power Bank для ноутбука</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Сумки для ноутбуков</a>
+                                    </div>
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Носители информации</a>
+                                        <a href="#" class="nav-link text-black-50">Все товары</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Карты памяти</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">SSD-накопители</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Внутренние жесткие диски
+                                            (HDD)</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Внешние жесткие диски (Ext.
+                                            HDD)</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">USB флешки</a>
+                                    </div>
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Мониторы</a>
+                                        <a href="#" class="nav-link text-black-50">Все товары</a>
+                                    </div>
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Мышки и клавиатуры</a>
+                                        <a href="#" class="nav-link text-black-50">Все товары</a>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Модемы, роутеры и сетевое оборудование</a>
+                                        <a href="#" class="nav-link text-black-50">Сетевое оборудование</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">WiFi Роутеры и модемы (Для телефонной сети ADSL)</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">WiFi Роутеры и модемы (Оптика)</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Оборудование 3G/4G</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Адаптеры Wi-Fi</a>
+                                    </div>
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Комплектующие</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Видеокарты</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Оперативная память (DDR)</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Источники бесперебойного питания</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Внешние оптические приводы DVD RW</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Блоки питания</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Веб-камеры</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Материнские платы</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Процессоры</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Веб-камеры</a>
+                                    </div>
+
+
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Компьютеры и моноблоки</a>
+                                        <a href="#" class="nav-link text-black-50">Все товары</a>
+                                        <a href="#" class="nav-link text-black-50">Настольные компьютеры</a>
+                                        <a href="#" class="nav-link text-black-50">Моноблоки</a>
+                                    </div>
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Офисная техника </a>
+                                        <a href="#" class="nav-link text-black-50">Все товары</a>
+                                        <a href="#" class="nav-link text-black-50">Принтеры и сканеры </a>
+                                        <a href="#" class="nav-link text-black-50">Сканеры</a>
+                                        <a href="#" class="nav-link text-black-50">Калькуляторы </a>
+                                        <a href="#" class="nav-link text-black-50">Счетчики банкнот (купюр)</a>
+                                        <a href="#" class="nav-link text-black-50">Проекторы</a>
+                                        <a href="#" class="nav-link text-black-50">Портативные принтеры</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="item mb-4">
+                                        <!-- <a href="#" class="fw-bold mb-3 text-dark">Гарнитуры и наушники</a> -->
+                                        <!-- <a href="#" class="nav-link text-black-50">Все товары</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desktop-content menu-content" data-list-order="5">
+                        <div class="content-inner">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Ноутбуки </a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Все товары</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Power Bank для ноутбука</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Сумки для ноутбуков</a>
+                                    </div>
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Носители информации</a>
+                                        <a href="#" class="nav-link text-black-50">Все товары</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Карты памяти</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">SSD-накопители</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Внутренние жесткие диски
+                                            (HDD)</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Внешние жесткие диски (Ext.
+                                            HDD)</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">USB флешки</a>
+                                    </div>
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Мониторы</a>
+                                        <a href="#" class="nav-link text-black-50">Все товары</a>
+                                    </div>
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Мышки и клавиатуры</a>
+                                        <a href="#" class="nav-link text-black-50">Все товары</a>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Модемы, роутеры и сетевое оборудование</a>
+                                        <a href="#" class="nav-link text-black-50">Сетевое оборудование</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">WiFi Роутеры и модемы (Для телефонной сети ADSL)</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">WiFi Роутеры и модемы (Оптика)</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Оборудование 3G/4G</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Адаптеры Wi-Fi</a>
+                                    </div>
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Комплектующие</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Видеокарты</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Оперативная память (DDR)</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Источники бесперебойного питания</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Внешние оптические приводы DVD RW</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Блоки питания</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Веб-камеры</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Материнские платы</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Процессоры</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Веб-камеры</a>
+                                    </div>
+
+
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Компьютеры и моноблоки</a>
+                                        <a href="#" class="nav-link text-black-50">Все товары</a>
+                                        <a href="#" class="nav-link text-black-50">Настольные компьютеры</a>
+                                        <a href="#" class="nav-link text-black-50">Моноблоки</a>
+                                    </div>
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Офисная техника </a>
+                                        <a href="#" class="nav-link text-black-50">Все товары</a>
+                                        <a href="#" class="nav-link text-black-50">Принтеры и сканеры </a>
+                                        <a href="#" class="nav-link text-black-50">Сканеры</a>
+                                        <a href="#" class="nav-link text-black-50">Калькуляторы </a>
+                                        <a href="#" class="nav-link text-black-50">Счетчики банкнот (купюр)</a>
+                                        <a href="#" class="nav-link text-black-50">Проекторы</a>
+                                        <a href="#" class="nav-link text-black-50">Портативные принтеры</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="item mb-4">
+                                        <!-- <a href="#" class="fw-bold mb-3 text-dark">Гарнитуры и наушники</a> -->
+                                        <!-- <a href="#" class="nav-link text-black-50">Все товары</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desktop-content menu-content" data-list-order="6">
+                        <div class="content-inner">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Ноутбуки </a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Все товары</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Power Bank для ноутбука</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Сумки для ноутбуков</a>
+                                    </div>
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Носители информации</a>
+                                        <a href="#" class="nav-link text-black-50">Все товары</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Карты памяти</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">SSD-накопители</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Внутренние жесткие диски
+                                            (HDD)</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Внешние жесткие диски (Ext.
+                                            HDD)</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">USB флешки</a>
+                                    </div>
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Мониторы</a>
+                                        <a href="#" class="nav-link text-black-50">Все товары</a>
+                                    </div>
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Мышки и клавиатуры</a>
+                                        <a href="#" class="nav-link text-black-50">Все товары</a>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Модемы, роутеры и сетевое оборудование</a>
+                                        <a href="#" class="nav-link text-black-50">Сетевое оборудование</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">WiFi Роутеры и модемы (Для телефонной сети ADSL)</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">WiFi Роутеры и модемы (Оптика)</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Оборудование 3G/4G</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Адаптеры Wi-Fi</a>
+                                    </div>
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Комплектующие</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Видеокарты</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Оперативная память (DDR)</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Источники бесперебойного питания</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Внешние оптические приводы DVD RW</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Блоки питания</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Веб-камеры</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Материнские платы</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Процессоры</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Веб-камеры</a>
+                                    </div>
+
+
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Компьютеры и моноблоки</a>
+                                        <a href="#" class="nav-link text-black-50">Все товары</a>
+                                        <a href="#" class="nav-link text-black-50">Настольные компьютеры</a>
+                                        <a href="#" class="nav-link text-black-50">Моноблоки</a>
+                                    </div>
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Офисная техника </a>
+                                        <a href="#" class="nav-link text-black-50">Все товары</a>
+                                        <a href="#" class="nav-link text-black-50">Принтеры и сканеры </a>
+                                        <a href="#" class="nav-link text-black-50">Сканеры</a>
+                                        <a href="#" class="nav-link text-black-50">Калькуляторы </a>
+                                        <a href="#" class="nav-link text-black-50">Счетчики банкнот (купюр)</a>
+                                        <a href="#" class="nav-link text-black-50">Проекторы</a>
+                                        <a href="#" class="nav-link text-black-50">Портативные принтеры</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="item mb-4">
+                                        <!-- <a href="#" class="fw-bold mb-3 text-dark">Гарнитуры и наушники</a> -->
+                                        <!-- <a href="#" class="nav-link text-black-50">Все товары</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desktop-content menu-content" data-list-order="7">
+                        <div class="content-inner">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Ноутбуки </a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Все товары</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Power Bank для ноутбука</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Сумки для ноутбуков</a>
+                                    </div>
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Носители информации</a>
+                                        <a href="#" class="nav-link text-black-50">Все товары</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Карты памяти</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">SSD-накопители</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Внутренние жесткие диски
+                                            (HDD)</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Внешние жесткие диски (Ext.
+                                            HDD)</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">USB флешки</a>
+                                    </div>
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Мониторы</a>
+                                        <a href="#" class="nav-link text-black-50">Все товары</a>
+                                    </div>
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Мышки и клавиатуры</a>
+                                        <a href="#" class="nav-link text-black-50">Все товары</a>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Модемы, роутеры и сетевое оборудование</a>
+                                        <a href="#" class="nav-link text-black-50">Сетевое оборудование</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">WiFi Роутеры и модемы (Для телефонной сети ADSL)</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">WiFi Роутеры и модемы (Оптика)</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Оборудование 3G/4G</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Адаптеры Wi-Fi</a>
+                                    </div>
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Комплектующие</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Видеокарты</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Оперативная память (DDR)</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Источники бесперебойного питания</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Внешние оптические приводы DVD RW</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Блоки питания</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Веб-камеры</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Материнские платы</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Процессоры</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Веб-камеры</a>
+                                    </div>
+
+
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Компьютеры и моноблоки</a>
+                                        <a href="#" class="nav-link text-black-50">Все товары</a>
+                                        <a href="#" class="nav-link text-black-50">Настольные компьютеры</a>
+                                        <a href="#" class="nav-link text-black-50">Моноблоки</a>
+                                    </div>
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Офисная техника </a>
+                                        <a href="#" class="nav-link text-black-50">Все товары</a>
+                                        <a href="#" class="nav-link text-black-50">Принтеры и сканеры </a>
+                                        <a href="#" class="nav-link text-black-50">Сканеры</a>
+                                        <a href="#" class="nav-link text-black-50">Калькуляторы </a>
+                                        <a href="#" class="nav-link text-black-50">Счетчики банкнот (купюр)</a>
+                                        <a href="#" class="nav-link text-black-50">Проекторы</a>
+                                        <a href="#" class="nav-link text-black-50">Портативные принтеры</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="item mb-4">
+                                        <!-- <a href="#" class="fw-bold mb-3 text-dark">Гарнитуры и наушники</a> -->
+                                        <!-- <a href="#" class="nav-link text-black-50">Все товары</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desktop-content menu-content" data-list-order="8">
+                        <div class="content-inner">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Ноутбуки </a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Все товары</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Power Bank для ноутбука</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Сумки для ноутбуков</a>
+                                    </div>
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Носители информации</a>
+                                        <a href="#" class="nav-link text-black-50">Все товары</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Карты памяти</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">SSD-накопители</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Внутренние жесткие диски
+                                            (HDD)</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Внешние жесткие диски (Ext.
+                                            HDD)</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">USB флешки</a>
+                                    </div>
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Мониторы</a>
+                                        <a href="#" class="nav-link text-black-50">Все товары</a>
+                                    </div>
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Мышки и клавиатуры</a>
+                                        <a href="#" class="nav-link text-black-50">Все товары</a>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Модемы, роутеры и сетевое оборудование</a>
+                                        <a href="#" class="nav-link text-black-50">Сетевое оборудование</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">WiFi Роутеры и модемы (Для телефонной сети ADSL)</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">WiFi Роутеры и модемы (Оптика)</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Оборудование 3G/4G</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Адаптеры Wi-Fi</a>
+                                    </div>
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Комплектующие</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Видеокарты</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Оперативная память (DDR)</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Источники бесперебойного питания</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Внешние оптические приводы DVD RW</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Блоки питания</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Веб-камеры</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Материнские платы</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Процессоры</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Веб-камеры</a>
+                                    </div>
+
+
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Компьютеры и моноблоки</a>
+                                        <a href="#" class="nav-link text-black-50">Все товары</a>
+                                        <a href="#" class="nav-link text-black-50">Настольные компьютеры</a>
+                                        <a href="#" class="nav-link text-black-50">Моноблоки</a>
+                                    </div>
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Офисная техника </a>
+                                        <a href="#" class="nav-link text-black-50">Все товары</a>
+                                        <a href="#" class="nav-link text-black-50">Принтеры и сканеры </a>
+                                        <a href="#" class="nav-link text-black-50">Сканеры</a>
+                                        <a href="#" class="nav-link text-black-50">Калькуляторы </a>
+                                        <a href="#" class="nav-link text-black-50">Счетчики банкнот (купюр)</a>
+                                        <a href="#" class="nav-link text-black-50">Проекторы</a>
+                                        <a href="#" class="nav-link text-black-50">Портативные принтеры</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="item mb-4">
+                                        <!-- <a href="#" class="fw-bold mb-3 text-dark">Гарнитуры и наушники</a> -->
+                                        <!-- <a href="#" class="nav-link text-black-50">Все товары</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desktop-content menu-content" data-list-order="9">
+                        <div class="content-inner">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Ноутбуки </a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Все товары</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Power Bank для ноутбука</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Сумки для ноутбуков</a>
+                                    </div>
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Носители информации</a>
+                                        <a href="#" class="nav-link text-black-50">Все товары</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Карты памяти</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">SSD-накопители</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Внутренние жесткие диски
+                                            (HDD)</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Внешние жесткие диски (Ext.
+                                            HDD)</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">USB флешки</a>
+                                    </div>
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Мониторы</a>
+                                        <a href="#" class="nav-link text-black-50">Все товары</a>
+                                    </div>
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Мышки и клавиатуры</a>
+                                        <a href="#" class="nav-link text-black-50">Все товары</a>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Модемы, роутеры и сетевое оборудование</a>
+                                        <a href="#" class="nav-link text-black-50">Сетевое оборудование</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">WiFi Роутеры и модемы (Для телефонной сети ADSL)</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">WiFi Роутеры и модемы (Оптика)</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Оборудование 3G/4G</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Адаптеры Wi-Fi</a>
+                                    </div>
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Комплектующие</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Видеокарты</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Оперативная память (DDR)</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Источники бесперебойного питания</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Внешние оптические приводы DVD RW</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Блоки питания</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Веб-камеры</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Материнские платы</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Процессоры</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Веб-камеры</a>
+                                    </div>
+
+
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Компьютеры и моноблоки</a>
+                                        <a href="#" class="nav-link text-black-50">Все товары</a>
+                                        <a href="#" class="nav-link text-black-50">Настольные компьютеры</a>
+                                        <a href="#" class="nav-link text-black-50">Моноблоки</a>
+                                    </div>
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Офисная техника </a>
+                                        <a href="#" class="nav-link text-black-50">Все товары</a>
+                                        <a href="#" class="nav-link text-black-50">Принтеры и сканеры </a>
+                                        <a href="#" class="nav-link text-black-50">Сканеры</a>
+                                        <a href="#" class="nav-link text-black-50">Калькуляторы </a>
+                                        <a href="#" class="nav-link text-black-50">Счетчики банкнот (купюр)</a>
+                                        <a href="#" class="nav-link text-black-50">Проекторы</a>
+                                        <a href="#" class="nav-link text-black-50">Портативные принтеры</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="item mb-4">
+                                        <!-- <a href="#" class="fw-bold mb-3 text-dark">Гарнитуры и наушники</a> -->
+                                        <!-- <a href="#" class="nav-link text-black-50">Все товары</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desktop-content menu-content" data-list-order="10">
+                        <div class="content-inner">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Ноутбуки </a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Все товары</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Power Bank для ноутбука</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Сумки для ноутбуков</a>
+                                    </div>
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Носители информации</a>
+                                        <a href="#" class="nav-link text-black-50">Все товары</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Карты памяти</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">SSD-накопители</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Внутренние жесткие диски
+                                            (HDD)</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Внешние жесткие диски (Ext.
+                                            HDD)</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">USB флешки</a>
+                                    </div>
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Мониторы</a>
+                                        <a href="#" class="nav-link text-black-50">Все товары</a>
+                                    </div>
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Мышки и клавиатуры</a>
+                                        <a href="#" class="nav-link text-black-50">Все товары</a>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Модемы, роутеры и сетевое оборудование</a>
+                                        <a href="#" class="nav-link text-black-50">Сетевое оборудование</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">WiFi Роутеры и модемы (Для телефонной сети ADSL)</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">WiFi Роутеры и модемы (Оптика)</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Оборудование 3G/4G</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Адаптеры Wi-Fi</a>
+                                    </div>
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Комплектующие</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Видеокарты</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Оперативная память (DDR)</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Источники бесперебойного питания</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Внешние оптические приводы DVD RW</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Блоки питания</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Веб-камеры</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Материнские платы</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Процессоры</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Веб-камеры</a>
+                                    </div>
+
+
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Компьютеры и моноблоки</a>
+                                        <a href="#" class="nav-link text-black-50">Все товары</a>
+                                        <a href="#" class="nav-link text-black-50">Настольные компьютеры</a>
+                                        <a href="#" class="nav-link text-black-50">Моноблоки</a>
+                                    </div>
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Офисная техника </a>
+                                        <a href="#" class="nav-link text-black-50">Все товары</a>
+                                        <a href="#" class="nav-link text-black-50">Принтеры и сканеры </a>
+                                        <a href="#" class="nav-link text-black-50">Сканеры</a>
+                                        <a href="#" class="nav-link text-black-50">Калькуляторы </a>
+                                        <a href="#" class="nav-link text-black-50">Счетчики банкнот (купюр)</a>
+                                        <a href="#" class="nav-link text-black-50">Проекторы</a>
+                                        <a href="#" class="nav-link text-black-50">Портативные принтеры</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="item mb-4">
+                                        <!-- <a href="#" class="fw-bold mb-3 text-dark">Гарнитуры и наушники</a> -->
+                                        <!-- <a href="#" class="nav-link text-black-50">Все товары</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desktop-content menu-content" data-list-order="11">
+                        <div class="content-inner">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Ноутбуки </a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Все товары</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Power Bank для ноутбука</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Сумки для ноутбуков</a>
+                                    </div>
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Носители информации</a>
+                                        <a href="#" class="nav-link text-black-50">Все товары</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Карты памяти</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">SSD-накопители</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Внутренние жесткие диски
+                                            (HDD)</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Внешние жесткие диски (Ext.
+                                            HDD)</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">USB флешки</a>
+                                    </div>
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Мониторы</a>
+                                        <a href="#" class="nav-link text-black-50">Все товары</a>
+                                    </div>
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Мышки и клавиатуры</a>
+                                        <a href="#" class="nav-link text-black-50">Все товары</a>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Модемы, роутеры и сетевое оборудование</a>
+                                        <a href="#" class="nav-link text-black-50">Сетевое оборудование</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">WiFi Роутеры и модемы (Для телефонной сети ADSL)</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">WiFi Роутеры и модемы (Оптика)</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Оборудование 3G/4G</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Адаптеры Wi-Fi</a>
+                                    </div>
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Комплектующие</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Видеокарты</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Оперативная память (DDR)</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Источники бесперебойного питания</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Внешние оптические приводы DVD RW</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Блоки питания</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Веб-камеры</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Материнские платы</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Процессоры</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Веб-камеры</a>
+                                    </div>
+
+
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Компьютеры и моноблоки</a>
+                                        <a href="#" class="nav-link text-black-50">Все товары</a>
+                                        <a href="#" class="nav-link text-black-50">Настольные компьютеры</a>
+                                        <a href="#" class="nav-link text-black-50">Моноблоки</a>
+                                    </div>
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Офисная техника </a>
+                                        <a href="#" class="nav-link text-black-50">Все товары</a>
+                                        <a href="#" class="nav-link text-black-50">Принтеры и сканеры </a>
+                                        <a href="#" class="nav-link text-black-50">Сканеры</a>
+                                        <a href="#" class="nav-link text-black-50">Калькуляторы </a>
+                                        <a href="#" class="nav-link text-black-50">Счетчики банкнот (купюр)</a>
+                                        <a href="#" class="nav-link text-black-50">Проекторы</a>
+                                        <a href="#" class="nav-link text-black-50">Портативные принтеры</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="item mb-4">
+                                        <!-- <a href="#" class="fw-bold mb-3 text-dark">Гарнитуры и наушники</a> -->
+                                        <!-- <a href="#" class="nav-link text-black-50">Все товары</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desktop-content menu-content" data-list-order="12">
+                        <div class="content-inner">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Ноутбуки </a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Все товары</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Power Bank для ноутбука</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Сумки для ноутбуков</a>
+                                    </div>
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Носители информации</a>
+                                        <a href="#" class="nav-link text-black-50">Все товары</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Карты памяти</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">SSD-накопители</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Внутренние жесткие диски
+                                            (HDD)</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Внешние жесткие диски (Ext.
+                                            HDD)</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">USB флешки</a>
+                                    </div>
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Мониторы</a>
+                                        <a href="#" class="nav-link text-black-50">Все товары</a>
+                                    </div>
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Мышки и клавиатуры</a>
+                                        <a href="#" class="nav-link text-black-50">Все товары</a>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Модемы, роутеры и сетевое оборудование</a>
+                                        <a href="#" class="nav-link text-black-50">Сетевое оборудование</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">WiFi Роутеры и модемы (Для телефонной сети ADSL)</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">WiFi Роутеры и модемы (Оптика)</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Оборудование 3G/4G</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Адаптеры Wi-Fi</a>
+                                    </div>
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Комплектующие</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Видеокарты</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Оперативная память (DDR)</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Источники бесперебойного питания</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Внешние оптические приводы DVD RW</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Блоки питания</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Веб-камеры</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Материнские платы</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Процессоры</a>
+                                        <a href="#" class="nav-link text-black-50 m-0">Веб-камеры</a>
+                                    </div>
+
+
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Компьютеры и моноблоки</a>
+                                        <a href="#" class="nav-link text-black-50">Все товары</a>
+                                        <a href="#" class="nav-link text-black-50">Настольные компьютеры</a>
+                                        <a href="#" class="nav-link text-black-50">Моноблоки</a>
+                                    </div>
+                                    <div class="item mb-4">
+                                        <a href="#" class="fw-bold mb-3 text-dark">Офисная техника </a>
+                                        <a href="#" class="nav-link text-black-50">Все товары</a>
+                                        <a href="#" class="nav-link text-black-50">Принтеры и сканеры </a>
+                                        <a href="#" class="nav-link text-black-50">Сканеры</a>
+                                        <a href="#" class="nav-link text-black-50">Калькуляторы </a>
+                                        <a href="#" class="nav-link text-black-50">Счетчики банкнот (купюр)</a>
+                                        <a href="#" class="nav-link text-black-50">Проекторы</a>
+                                        <a href="#" class="nav-link text-black-50">Портативные принтеры</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="item mb-4">
+                                        <!-- <a href="#" class="fw-bold mb-3 text-dark">Гарнитуры и наушники</a> -->
+                                        <!-- <a href="#" class="nav-link text-black-50">Все товары</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desktop-content menu-content" data-list-order="13">
                         <div class="content-inner">
                             <div class="row">
                                 <div class="col-lg-3">
