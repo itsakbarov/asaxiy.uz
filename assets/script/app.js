@@ -182,37 +182,38 @@ $('.overlay').click(function (e) {
     $('.mobile-menu').remove('active')
 })
 
-// $('.game-tab').hover(function() {
-//     console.log('hai');
-//     $('.gamer-content ').toggleClass('active');
-//     $('.game-tab').toggleClass('active');
-// })
-// $('.desktop-tab').hover(function() {
-//     $('.desktop-content ').toggleClass('active');
-//     $('.desktop-tab').toggleClass('active');
-// })
-// $('.desktop-content').hover(function() {
-//     $('.desktop-content ').toggleClass('active');
-//     $('.desktop-tab').toggleClass('active');
-// })
-
-var tabBtn = document.querySelectorAll('.tab');
-var tabMenu = document.querySelectorAll('.menu-content');
-
-function remover(activedBtn) {
-    tabMenu.forEach(singleMenu => {
-        if (singleMenu.dataset.menuContent === activedBtn.dataset.linkItem) {
-            singleMenu.classList.remove('active');
-            activedBtn.classList.remove('active');
-        } else {
-            singleMenu.classList.toggle('active');
-            activedBtn.classList.toggle('active');
-        }
-    })
-}
-tabBtn.forEach(eachBtn => {
-    eachBtn.addEventListener('mouseenter', function (e) {
-        e.preventDefault();
-        remover(eachBtn);
-    })
+$('.game-tab').hover(function() {
+    console.log('hai');
+    $('.gamer-content ').toggleClass('active');
+    $('.game-tab').toggleClass('active');
 })
+$('.mobile-tab').hover(function () {
+    console.log('hai');
+    $('.mobile-content ').toggleClass('active');
+    $('.mobile-tab').toggleClass('active');
+})
+$('.desktop-tab').hover(function() {
+    $('.desktop-content ').toggleClass('active');
+    $('.desktop-tab').toggleClass('active');
+})
+
+// var tabBtn = document.querySelectorAll('.tab');
+// var tabMenu = document.querySelectorAll('.menu-content');
+
+// function remover(activedBtn) {
+//     tabMenu.forEach(singleMenu => {
+//         if (singleMenu.dataset.menuContent === activedBtn.dataset.linkItem) {
+//             singleMenu.classList.remove('active');
+//             activedBtn.classList.remove('active');
+//         } else {
+//             singleMenu.classList.toggle('active');
+//             activedBtn.classList.toggle('active');
+//         }
+//     })
+// }
+// tabBtn.forEach(eachBtn => {
+//     eachBtn.addEventListener('mouseenter', function (e) {
+//         e.preventDefault();
+//         remover(eachBtn);
+//     })
+// })

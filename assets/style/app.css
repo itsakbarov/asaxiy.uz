@@ -856,11 +856,11 @@ a {
   display: block;
 }
 
-.desktop-content {
+.menu-content {
   display: none;
 }
 
-.desktop-content.active {
+.menu-content.active {
   display: block;
 }
 
